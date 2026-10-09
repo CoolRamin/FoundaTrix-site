@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Features — FoundaTrix Studio</title>
+<meta name="description" content="What FoundaTrix Studio computes and the standards it follows: bearing with partial uplift, overturning and sliding, ACI 318-19 footing, pedestal and anchor rod design, wizards, AISC 360-22 steel design, calculation reports and IFC and Revit export." />
+<meta name="color-scheme" content="light dark" />
+<meta name="theme-color" content="#0a0f1c" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="FoundaTrix Studio" />
+<meta property="og:title" content="FoundaTrix Studio features: the engineering, in detail" />
+<meta property="og:description" content="Methods, standards and limits of FoundaTrix Studio, spread foundation analysis and design for Windows." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="/styles.css" />
+<script src="/site.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="/" aria-label="FoundaTrix Studio home">
+      <img class="brand__mark" src="/images/foundatrix-mark.svg" alt="" width="34" height="34" />
+      <span class="brand__name">FoundaTrix <span>Studio</span></span>
+    </a>
+    <div class="nav__menu" id="site-menu">
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="/features/" aria-current="page">Features</a></li>
+          <li><a href="/#premium">Premium</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/support/">Support</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <a class="icon-btn" href="https://github.com/CoolRamin/FoundaTrix-site" target="_blank" rel="noopener" aria-label="FoundaTrix Studio on GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a class="btn btn--primary btn--sm" href="/#download">Download free</a>
+      </div>
+    </div>
+    <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero on-dark" aria-labelledby="page-title">
+    <div class="container">
+      <p class="eyebrow">Features</p>
+      <h1 id="page-title">The engineering, in detail.</h1>
+      <p>What FoundaTrix Studio computes, the standards it follows, and where it stops. Every check names the provision it comes from, and the built-in manual explains each method so you can verify it yourself.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="/#download">Download free</a>
+        <a class="btn btn--secondary" href="/pricing/">Compare plans</a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="On this page">
+    <div class="container">
+      <ul>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#concrete">Concrete</a></li>
+        <li><a href="#anchors">Anchor rods</a></li>
+        <li><a href="#studio">The Studio</a></li>
+        <li><a href="#data">Tables &amp; data</a></li>
+        <li><a href="#wizards">Wizards</a></li>
+        <li><a href="#steel">Steel design</a></li>
+        <li><a href="#report">Report</a></li>
+        <li><a href="#bim">IFC &amp; Revit</a></li>
+        <li><a href="#cloud">Cloud</a></li>
+        <li><a href="#limits">Limits</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== Analysis ===================== -->
+  <section id="analysis" aria-labelledby="analysis-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Analysis &middot; Free</p>
+        <h2 id="analysis-title">Bearing, overturning and sliding, for any outline.</h2>
+        <p>Every footing is analysed on its own soil under every load combination. The footing is rigid and the soil cannot pull: where a linear distribution would go into tension, the base lifts and the program finds the part still bearing.</p>
+      </div>
+      <div class="spec-grid">
+        <div class="spec-card reveal">
+          <div class="spec-card__head"><p class="card__kicker">Bearing pressure</p><span class="badge badge--free">Free</span></div>
+          <h3>Solved exactly under partial uplift</h3>
+          <ul class="check-list">
+            <li>Rectangular, circular, octagonal and irregular bases take the same path; none is approximated as something simpler</li>
+            <li>Where the base lifts, the neutral axis is solved so the pressure resultant sits exactly where the load acts</li>
+            <li>Partial contact and net uplift reported for every combination, with the share of the base still bearing</li>
+            <li>The net allowable from your geotechnical report converted to gross with each footing's own depth</li>
+            <li>A short-term increase for wind and seismic rows, when you specify one</li>
+          </ul>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-card__head"><p class="card__kicker">Stability</p><span class="badge badge--free">Free</span></div>
+          <h3>Overturning and sliding that mean something for any shape</h3>
+          <ul class="check-list">
+            <li>Overturning measured geometrically, from the plan centroid through the resultant to where it leaves the base</li>
+            <li>Sliding as base friction plus passive resistance, the passive credit off unless you supply a coefficient</li>
+            <li>ASCE 7-22 prescribes no factor of safety: an ordinary footing is held to a ratio of one unless you state a target</li>
+            <li>Wizard-built petrochemical foundations take the targets their governing guides ask for</li>
+          </ul>
+        </div>
+        <div class="spec-card spec-card--wide reveal">
+          <div class="spec-card__head"><p class="card__kicker">Load combinations</p><span class="badge badge--free">Free</span></div>
+          <h3>ASCE 7-22 Chapter 2, traced to the line of the standard</h3>
+          <ul class="check-list">
+            <li>Strength design (Section 2.3) and allowable stress (Section 2.4), the seismic combinations of Sections 2.3.6 and 2.4.5 included</li>
+            <li>Every printed combination that offers a choice is expanded into one case per choice, named after the line and the alternative it took</li>
+            <li>The vertical seismic effect, 0.2 S<sub>DS</sub>D, folded into the seismic rows; the soil-interface exception of Section 12.4.2.2 offered, and off by default</li>
+            <li>Lateral loads that act one way or either way, and the two horizontal directions combined as the standard permits</li>
+            <li>Or supply your own factored combinations, pasted straight from a frame analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Concrete ===================== -->
+  <section id="concrete" class="alt-band" aria-labelledby="concrete-title">
+    <div class="container">
+      <div class="feature-row reveal">
+        <div class="feature-row__text">
+          <p class="eyebrow">Concrete design &middot; Free</p>
+          <h3 id="concrete-title">ACI 318-19, worked over every strength combination.</h3>
+          <p>The design runs in the same pass as the analysis. The strength cases design the concrete; the allowable-stress cases judge the soil. Every row of the design says which clause it checks.</p>
+          <ul class="check-list">
+            <li><strong>Footings:</strong> two-way shear on a critical section at d/2 from each pedestal, merged where sections overlap and trimmed at an edge, with the transferred moment's eccentric shear</li>
+            <li><strong>One-way shear and flexure</strong> from a section swept across the footing along the bar direction you choose; Table 22.5.5.1 with the size effect</li>
+            <li><strong>Four independent mats</strong> sized and the bars picked, with minimum steel, development and standard hooks that must fit</li>
+            <li><strong>Pedestals:</strong> axial force and biaxial moment on a full strength surface, plain or reinforced, with ties and seismic detailing</li>
+            <li><strong>Strap footings:</strong> two footings and their strap as one rigid body, the strap a grade beam, by strut-and-tie where it is deep</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">Studio &middot; Design</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/placeholders/concrete-design.svg" width="1200" height="760" loading="lazy" alt="The Design pane listing each check with its ratio and ACI 318-19 clause, beside the swept shear and moment envelope." /></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Anchor rods ===================== -->
+  <section id="anchors" aria-labelledby="anchors-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Anchor rods &middot; Free</p>
+        <h2 id="anchors-title">Cast-in anchorage to ACI 318-19 Chapter 17.</h2>
+        <p>Two bodies of work sit under one heading and both bind: the dimensions that keep the concrete from splitting, and the strength of every failure mode the chapter gives an equation for.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal">
+          <p class="card__kicker">Dimensions</p>
+          <h3>Spacing, edges and embedment</h3>
+          <p>Minimum spacing and edge distance from Table 17.9.2(a), measured along the chord between rods, and the embedment and gauge length the ASCE anchorage guide and PIP STE05121 ask for.</p>
+        </div>
+        <div class="card reveal">
+          <p class="card__kicker">Strength</p>
+          <h3>Every mode, and their interaction</h3>
+          <p>Steel in tension and shear, concrete breakout, pullout, side-face blowout and pryout, and the tension-shear interaction; Section 17.10's seismic requirements on the seismic rows.</p>
+        </div>
+        <div class="card reveal">
+          <p class="card__kicker">Hardware</p>
+          <h3>The rods you would specify</h3>
+          <p>Standard rod sizes with their nuts, washers and threads read from the standards, grouted base plates, anchor plates, and anchor reinforcement designed when breakout governs.</p>
+        </div>
+      </div>
+      <div class="callout callout--info callout--spaced reveal" role="note">
+        <svg class="callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        <div>
+          <h3>Why post-installed anchors are left out</h3>
+          <p>Chapter 17 says the pullout strength of expansion, undercut, screw and adhesive anchors may not be calculated at all: it comes from a product evaluation report. A number computed for them here would be a number the standard forbids, so the program does not offer one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Studio ===================== -->
+  <section id="studio" class="alt-band" aria-labelledby="studio-title">
+    <div class="container">
+      <div class="feature-row feature-row--flip reveal">
+        <div class="feature-row__text">
+          <p class="eyebrow">The Studio &middot; Free</p>
+          <h3 id="studio-title">A 3D modelling environment that works like drafting.</h3>
+          <p>A project is a three-dimensional model of a site: footings at positions on the site, each with its pedestals and loads, over one soil and one set of materials. Commands are clicked on the ribbon or typed, and answered with a click or a value.</p>
+          <ul class="check-list">
+            <li>Absolute, relative and polar coordinates; snaps to ends, midpoints, centres, intersections, perpendiculars and the grid; ortho, polar tracking and axis locks; set-out grid lines</li>
+            <li>FOOTING, PEDESTAL, LOAD, MOVE, COPY, ROTATE, ARRAY, MIRROR, MEASURE and ERASE, each one undo step</li>
+            <li>Hide, isolate and unhide; named views; pictures of the view with labels and dimensions</li>
+            <li>Model Explorer, Properties and Command Line in panes you can dock, float, pin or move</li>
+            <li>The model checked as you build it, every problem with a code, a sentence and its object</li>
+            <li>Unlimited undo that survives a save, and Reset to the last save in one step</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">FoundaTrix Studio &mdash; Sample Project</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/placeholders/studio-overview.svg" width="1600" height="900" loading="lazy" alt="The Studio workspace with the Model Explorer, a 3D view of a site's footings coloured by bearing pressure, and the Properties pane." /></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Data ===================== -->
+  <section id="data" aria-labelledby="data-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Tables &amp; data &middot; Free</p>
+        <h2 id="data-title">Your data, in the formats you already use.</h2>
+      </div>
+      <div class="card-grid card-grid--4">
+        <div class="card reveal">
+          <h3>Tables beside the model</h3>
+          <p>Footings, pedestals, loads and combinations as spreadsheet-style tables that stay in step with the 3D model.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Clipboard in and out</h3>
+          <p>Copy with headers, edit in your spreadsheet, paste back; comma, semicolon and tab-separated text all land.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Formulas and feet-inches</h3>
+          <p>Type <code>=</code> and a formula in any number field, and Imperial lengths as feet and inches.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Plain-text projects</h3>
+          <p>One <code>.rfnd</code> file per project, readable, diffable and easy to send to a reviewer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Wizards ===================== -->
+  <section id="wizards" class="premium-band on-dark" aria-labelledby="wizards-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--premium">Wizards &middot; Premium</p>
+        <h2 id="wizards-title">Five families of equipment, <span class="grad">each to its governing practice.</span></h2>
+        <p>A wizard asks about the equipment and its site, checks every answer as you type, and builds the complete foundation once, when you say Build: loads, combinations, trial sizes and anchorage, with each decision recorded beside its clause.</p>
+      </div>
+      <div class="premium-showcase reveal">
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">Vertical Vessel Wizard &mdash; Wind</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/placeholders/wizard.svg" width="1200" height="760" loading="lazy" alt="The vertical vessel wizard: steps, questions, a to-scale drawing of the vessel and the page's checks." /></div>
+          </div>
+        </figure>
+        <div>
+          <h3>Petrochemical foundations follow the ASCE guides.</h3>
+          <p>For vessels, exchangers and pipe supports, the three ASCE petrochemical guides for wind, seismic and anchorage govern together with ASCE 7-22, and the PIP practices supplement them where the guides are silent. Substation equipment follows ASCE MOP 113 and the IEEE standards instead.</p>
+          <ul class="check-list check-list--premium">
+            <li>Each wizard lists every decision it made, with its clause, before it builds anything</li>
+            <li>What it builds is an ordinary foundation, open to every edit, analysis and design</li>
+            <li>A size you state is built as stated; a conflict is said, never silently resized</li>
+          </ul>
+        </div>
+      </div>
+      <div class="premium-grid">
+        <article class="premium-card reveal"><div class="premium-card__body">
+          <span class="badge badge--premium">Vertical vessels</span>
+          <h3>Towers, drums and reactors</h3>
+          <ul class="check-list check-list--premium check-list--sm">
+            <li>Uniform or stepped shells, skirts, and where the contents sit</li>
+            <li>Nozzles with their loads carried to the base; pipes, platforms and insulation</li>
+            <li>The period over the skirt and shell; the test weight's ceiling</li>
+            <li>Octagonal foundations checked on their diagonal; pedestal ties around the rods</li>
+            <li>Energy-balance stability for existing facilities</li>
+          </ul>
+          <p class="refs-inline">PIP STE03350 &middot; ASCE 7-22 &middot; ASCE wind, seismic and anchorage guides</p>
+        </div></article>
+        <article class="premium-card reveal"><div class="premium-card__body">
+          <span class="badge badge--premium">Horizontal vessels &amp; exchangers</span>
+          <h3>Units and stacked pairs on two saddles</h3>
+          <ul class="check-list check-list--premium check-list--sm">
+            <li>Shell-and-tube exchangers and horizontal vessels, single or stacked</li>
+            <li>Thermal forces at the sliding saddle and bundle pull</li>
+            <li>Weights from the practice's figures when none is stated</li>
+            <li>Anchor rods in a row, designed to Chapter 17</li>
+            <li>Two spread footings, one combined slab, or a strap</li>
+          </ul>
+          <p class="refs-inline">PIP STE03360 &middot; ASCE 7-22 &middot; ASCE petrochemical guides</p>
+        </div></article>
+        <article class="premium-card reveal"><div class="premium-card__body">
+          <span class="badge badge--premium">Substation equipment</span>
+          <h3>Transformers, breakers, switches, bus supports</h3>
+          <ul class="check-list check-list--premium check-list--sm">
+            <li>A structure and the equipment types placed on it, defined once and reused</li>
+            <li>Every insulator and bushing checked for gravity, wind, fault and earthquake, tilted ones included</li>
+            <li>Transformer oil containment pits, three ways, with plinths</li>
+            <li>The stand analysed as a frame for its foundation's reactions</li>
+          </ul>
+          <p class="refs-inline">ASCE MOP 113 &middot; MOP 161 &middot; IEEE 693, 605, 980 &middot; ASCE 7-22</p>
+        </div></article>
+        <article class="premium-card reveal"><div class="premium-card__body">
+          <span class="badge badge--premium">Pipe supports &amp; racks</span>
+          <h3>T-supports and pipe rack bents</h3>
+          <ul class="check-list check-list--premium check-list--sm">
+            <li>Pipes, conduits, cable trays and walkways, with friction and anchor forces</li>
+            <li>Reactions from your piping stress analysis, case by case</li>
+            <li>Wind on banks of lines; snow, ice, walkway live load and thermal effects</li>
+            <li>Several bents from one, each with its own footing</li>
+          </ul>
+          <p class="refs-inline">PIP STC01015 &middot; ASCE 7-22 &middot; ASCE petrochemical guides</p>
+        </div></article>
+        <article class="premium-card reveal"><div class="premium-card__body">
+          <span class="badge badge--premium">Every wizard</span>
+          <h3>Loads you can see</h3>
+          <ul class="check-list check-list--premium check-list--sm">
+            <li>Any load set drawn on the model, force for force as the analysis receives it</li>
+            <li>The drawing follows your cursor through the questions</li>
+            <li>Notes carried to the report and the command line</li>
+          </ul>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Steel ===================== -->
+  <section id="steel" aria-labelledby="steel-title">
+    <div class="container">
+      <div class="feature-row reveal">
+        <div class="feature-row__text">
+          <p class="eyebrow eyebrow--premium">Steel design &middot; Premium</p>
+          <h3 id="steel-title">AISC 360-22 by the direct analysis method.</h3>
+          <p>Substation stands, T-supports and pipe racks are analysed whole, second order, under every strength combination, then each member is checked by LRFD at every station along it.</p>
+          <ul class="check-list check-list--premium">
+            <li>P-&Delta; and P-&delta; with the specification's stiffness reductions and notional loads; tension-only bracing; instability reported, never hidden</li>
+            <li>Members to Chapters D to H by family, including torsion of open sections; C<sub>b</sub> worked from the structure</li>
+            <li>Base plates to AISC Design Guide 1, third edition, with Design Guide 10 for rods beyond the column</li>
+            <li>The column's fillet weld to Section J2.4; deflections to the governing practice</li>
+            <li>Name a group such as W12 and get the lightest section that passes, from the AISC shapes database</li>
+            <li>The model coloured along each member by utilisation, for the envelope or one combination</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">Studio &middot; Steel</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/placeholders/steel-design.svg" width="1200" height="760" loading="lazy" alt="A pipe rack coloured member by member by its AISC 360-22 utilisation, with the Steel pane." /></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Report ===================== -->
+  <section id="report" class="alt-band" aria-labelledby="report-title">
+    <div class="container">
+      <div class="feature-row feature-row--flip reveal">
+        <div class="feature-row__text">
+          <p class="eyebrow eyebrow--premium">Calculation report &middot; Premium</p>
+          <h3 id="report-title">A calculation package a reviewer can follow.</h3>
+          <p>A typeset PDF in which every derivation is printed twice: once symbolically, and once with your numbers and units substituted, each beside the clause it comes from.</p>
+          <ul class="check-list check-list--premium">
+            <li>Your firm's name and logo on the cover and the page headers; your paper size</li>
+            <li>Dimensioned figures of the footing, the pedestals, the reinforcement and the anchorage</li>
+            <li>The basis of design, the register of assumptions and the references, always included</li>
+            <li>Written only from a current analysis, and marked NOT A DESIGN where that applies</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">Calculation Report</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/placeholders/calc-report.svg" width="1200" height="760" loading="lazy" alt="Two pages of the calculation report: a derivation symbolic then substituted with its clause, and a dimensioned figure." /></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BIM ===================== -->
+  <section id="bim" aria-labelledby="bim-title">
+    <div class="container">
+      <div class="feature-row reveal">
+        <div class="feature-row__text">
+          <p class="eyebrow eyebrow--premium">IFC &amp; Revit export &middot; Premium</p>
+          <h3 id="bim-title">Coordinate the foundation with everyone else's model.</h3>
+          <p>The physical model is written from the document, never from the screen: IFC 4.3 for any openBIM tool, or a Revit exchange file that the included Ramisoft Revit add-in builds as native, editable Revit elements.</p>
+          <ul class="check-list check-list--premium">
+            <li>Footings, pedestals, straps and pits, with property sets and quantities</li>
+            <li>Reinforcement from the current design as real bars; anchor rods with nuts, washers and drilled base plates</li>
+            <li>SI units at the boundary and stable identities, so exporting again updates the model</li>
+            <li>One add-in for Revit 2025, 2026 and 2027, run and tested in Revit 2026</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">BIM viewer &mdash; F4.ifc</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/placeholders/bim-export.svg" width="1200" height="760" loading="lazy" alt="An exported foundation in a BIM viewer, with reinforcement, anchor rods and a drilled base plate." /></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Cloud ===================== -->
+  <section id="cloud" class="alt-band" aria-labelledby="cloud-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Cloud &middot; Free account</p>
+        <h2 id="cloud-title">Jobs and designs that follow you, when you sign in.</h2>
+        <p>Signing in is optional and free with an email address. One Ramisoft account signs in to FoundaTrix Studio and RPile alike, and a job can hold designs from both.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal"><span class="badge badge--account">Free account</span><h3>Jobs and designs</h3><p>A job per site, holding its designs; open them on any computer you sign in on.</p></div>
+        <div class="card reveal"><span class="badge badge--account">Free account</span><h3>Version history</h3><p>Every save is a version, with your comment beside it; saved versions are kept for six months.</p></div>
+        <div class="card reveal"><span class="badge badge--account">Free account</span><h3>Recycle bin</h3><p>Deleted jobs and designs wait thirty days, where you can restore them.</p></div>
+        <div class="card reveal"><span class="badge badge--account">Free account</span><h3>Your organization</h3><p>Share a job with the organization you belong to; whoever is editing a design is shown to the others.</p></div>
+        <div class="card reveal"><span class="badge badge--account">Free account</span><h3>Searchable descriptions</h3><p>Describe a design in a sentence and find it later by meaning, not only by name.</p></div>
+        <div class="card reveal"><span class="badge badge--premium">Premium</span><h3>Job map and address lookup</h3><p>Your jobs as pins on a map; place a new job by its address or on the map.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Limits ===================== -->
+  <section id="limits" aria-labelledby="limits-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Limits</p>
+        <h2 id="limits-title">What it does not do, said plainly.</h2>
+        <p>So you know what still needs doing elsewhere. The user's manual lists every assumption and every limit.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal">
+          <h3>The soil response is not modelled</h3>
+          <p>No subgrade modulus, settlement or bearing capacity from soil strength parameters. The allowable bearing pressure is your geotechnical engineer's, taken as given.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Post-installed anchors</h3>
+          <p>Deliberately absent: their strengths come from product evaluation reports, not from Chapter 17's equations.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Lateral earth pressure</h3>
+          <p>Not a load case. Passive resistance enters sliding only when you supply a coefficient.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== References ===================== -->
+  <section id="references" class="alt-band section--tight" aria-labelledby="references-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">References</p>
+        <h2 id="references-title">The documents behind the checks.</h2>
+      </div>
+      <ol class="refs reveal">
+        <li>ACI Committee 318 (2019). <em>ACI CODE-318-19, Building Code Requirements for Structural Concrete and Commentary.</em> American Concrete Institute.</li>
+        <li>ASCE/SEI 7-22 (2022). <em>Minimum Design Loads and Associated Criteria for Buildings and Other Structures.</em> American Society of Civil Engineers.</li>
+        <li>ANSI/AISC 360-22 (2022). <em>Specification for Structural Steel Buildings.</em> American Institute of Steel Construction.</li>
+        <li>AISC Design Guide 1, third edition (2024). <em>Base Connection Design for Steel Structures.</em> AISC Design Guide 10, second edition (2020), for rods beyond the column.</li>
+        <li>ASCE (2020). <em>Wind Load Design for Petrochemical and Other Industrial Facilities.</em></li>
+        <li>ASCE, third edition. <em>Seismic Evaluation and Design of Petrochemical and Other Industrial Facilities.</em></li>
+        <li>ASCE (2022), second edition. <em>Anchorage Design for Petrochemical Facilities.</em></li>
+        <li>ASCE Manual of Practice 113 (2023), substation structure design, and Manual of Practice 161.</li>
+        <li>IEEE 693-2018, seismic design of substations; IEEE 605-2023, bus design in air-insulated substations; IEEE 980-2021, containment and control of oil spills in substations.</li>
+        <li>Process Industry Practices: STC01015, structural design criteria; STE03350, vertical vessel foundations; STE03360, heat exchanger and horizontal vessel foundations; STE05121, anchor bolts.</li>
+        <li>buildingSMART International. <em>IFC 4.3 ADD2</em> (ISO 16739-1:2024).</li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="closing-title">
+    <div class="container closing reveal">
+      <h2 id="closing-title">See it on your next footing.</h2>
+      <p>Download FoundaTrix Studio free, with no account, and run a foundation you already know the answer to. Then sign in to try the premium tools for 30 days.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary btn--lg" href="/#download">Download free</a>
+        <a class="btn btn--ghost btn--lg" href="/pricing/">Compare plans</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/" aria-label="FoundaTrix Studio home">
+          <img class="brand__mark" src="/images/foundatrix-mark.svg" alt="" width="34" height="34" />
+          <span class="brand__name">FoundaTrix <span>Studio</span></span>
+        </a>
+        <p>Analysis and design of spread foundations, for Windows. A Ramisoft Solutions product.</p>
+        <p class="sibling">Also from Ramisoft Solutions: <a href="https://www.ramisoftsolutions.com/" target="_blank" rel="noopener">RPile</a>, lateral pile and caisson analysis. One account signs in to both.</p>
+      </div>
+      <div class="footer__col">
+        <h2>Product</h2>
+        <ul>
+          <li><a href="/features/">Features</a></li>
+          <li><a href="/#premium">Premium</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>Support</h2>
+        <ul>
+          <li><a href="/support/">Help and contact</a></li>
+          <li><a href="https://github.com/CoolRamin/FoundaTrix-site/issues/new?template=bug_report.yml" target="_blank" rel="noopener">Report a bug</a></li>
+          <li><a href="https://github.com/CoolRamin/FoundaTrix-site/issues/new?template=feature_request.yml" target="_blank" rel="noopener">Request a feature</a></li>
+          <li><a href="mailto:admin@ramisoftsolutions.com">Email us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Ramisoft Solutions &middot; Built and maintained in California, United States</span>
+      <div class="footer__social">
+        <a class="icon-btn" href="https://github.com/CoolRamin/FoundaTrix-site" target="_blank" rel="noopener" aria-label="FoundaTrix Studio on GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/company/ramisoftsolutions/" target="_blank" rel="noopener" aria-label="Ramisoft Solutions on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTopBtn" class="scroll-top" type="button" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg>
+</button>
+
+</body>
+</html>
