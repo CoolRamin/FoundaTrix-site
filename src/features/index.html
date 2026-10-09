@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Features — FoundaTrix Studio</title>
-<meta name="description" content="What FoundaTrix Studio computes and the standards it follows: bearing with partial uplift, overturning and sliding, ACI 318-19 footing, pedestal and anchor rod design, wizards, AISC 360-22 steel design, calculation reports and IFC and Revit export." />
+<meta name="description" content="What FoundaTrix Studio computes and the standards it follows, for spread, combined, strapped and mat foundations of any shape: bearing with partial uplift, overturning and sliding, ACI 318-19 design, wizards, AISC 360-22 steel design, calculation reports and IFC and Revit export." />
 <meta name="color-scheme" content="light dark" />
 <meta name="theme-color" content="#0a0f1c" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="FoundaTrix Studio" />
 <meta property="og:title" content="FoundaTrix Studio features: the engineering, in detail" />
-<meta property="og:description" content="Methods, standards and limits of FoundaTrix Studio, spread foundation analysis and design for Windows." />
+<meta property="og:description" content="Methods, standards and limits of FoundaTrix Studio, analysis and design of rigid foundations of any shape for Windows." />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="/styles.css" />
 <script src="/site.js" defer></script>
@@ -54,7 +54,7 @@
     <div class="container">
       <p class="eyebrow">Features</p>
       <h1 id="page-title">The engineering, in detail.</h1>
-      <p>What FoundaTrix Studio computes, the standards it follows, and where it stops. Every check names the provision it comes from, and the built-in manual explains each method so you can verify it yourself.</p>
+      <p>What FoundaTrix Studio computes for every rigid foundation, the standards it follows, and where it stops. Every check names the provision it comes from, and the built-in manual explains each method so you can verify it yourself.</p>
       <div class="cta-row">
         <a class="btn btn--primary" href="/#download">Download free</a>
         <a class="btn btn--secondary" href="/pricing/">Compare plans</a>
@@ -65,13 +65,14 @@
   <nav class="subnav" aria-label="On this page">
     <div class="container">
       <ul>
+        <li><a href="#types">Types</a></li>
         <li><a href="#analysis">Analysis</a></li>
         <li><a href="#concrete">Concrete</a></li>
-        <li><a href="#anchors">Anchor rods</a></li>
-        <li><a href="#studio">The Studio</a></li>
-        <li><a href="#data">Tables &amp; data</a></li>
+        <li><a href="#anchors">Anchors</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#data">Tables</a></li>
         <li><a href="#wizards">Wizards</a></li>
-        <li><a href="#steel">Steel design</a></li>
+        <li><a href="#steel">Steel</a></li>
         <li><a href="#report">Report</a></li>
         <li><a href="#bim">IFC &amp; Revit</a></li>
         <li><a href="#cloud">Cloud</a></li>
@@ -81,13 +82,55 @@
     </div>
   </nav>
 
+  <!-- ===================== Foundation types ===================== -->
+  <section id="types" class="alt-band" aria-labelledby="types-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Foundation types &middot; Free</p>
+        <h2 id="types-title">One method for every rigid foundation.</h2>
+        <p>A spread footing is the simplest case of what the program does, not the limit of it. Any foundation that acts as a rigid body, of any outline and carrying any number of pedestals, takes the same exact path through the analysis and the design.</p>
+      </div>
+      <ul class="types">
+        <li class="type-card reveal">
+          <div class="type-card__art"><img src="/images/types/type-spread.svg" width="260" height="170" alt="" loading="lazy" /></div>
+          <h3>Spread footings</h3>
+          <p>One pedestal on one footing: the column or equipment base, in any outline.</p>
+        </li>
+        <li class="type-card reveal">
+          <div class="type-card__art"><img src="/images/types/type-combined.svg" width="260" height="170" alt="" loading="lazy" /></div>
+          <h3>Combined footings</h3>
+          <p>Two or more pedestals sharing one footing, each with its own loads, cage and anchor rods.</p>
+        </li>
+        <li class="type-card reveal">
+          <div class="type-card__art"><img src="/images/types/type-strapped.svg" width="260" height="170" alt="" loading="lazy" /></div>
+          <h3>Strapped footings</h3>
+          <p>Two footings joined by a strap beam and analysed as one rigid body; the strap designed as a grade beam.</p>
+        </li>
+        <li class="type-card reveal">
+          <div class="type-card__art"><img src="/images/types/type-mat.svg" width="260" height="170" alt="" loading="lazy" /></div>
+          <h3>Mat foundations</h3>
+          <p>One mat under many pedestals and plinths, from an equipment skid to a substation pad.</p>
+        </li>
+        <li class="type-card reveal">
+          <div class="type-card__art"><img src="/images/types/type-outline.svg" width="260" height="170" alt="" loading="lazy" /></div>
+          <h3>Any outline</h3>
+          <p>Rectangles, circles, octagons and irregular polygons, with pedestals of any shape placed anywhere on them.</p>
+        </li>
+      </ul>
+      <p class="types-note reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        <span><strong>The one condition: the foundation acts as a rigid body.</strong> It must be stiff enough for the bearing pressure to vary linearly across the base: the classical assumption the whole method rests on. Where part of the base lifts, the soil carries nothing there and the program finds the part still bearing.</span>
+      </p>
+    </div>
+  </section>
+
   <!-- ===================== Analysis ===================== -->
   <section id="analysis" aria-labelledby="analysis-title">
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">Analysis &middot; Free</p>
         <h2 id="analysis-title">Bearing, overturning and sliding, for any outline.</h2>
-        <p>Every footing is analysed on its own soil under every load combination. The footing is rigid and the soil cannot pull: where a linear distribution would go into tension, the base lifts and the program finds the part still bearing.</p>
+        <p>Every foundation, from a single footing to a mat, is analysed on its own soil under every load combination. The foundation is rigid and the soil cannot pull: where a linear distribution would go into tension, the base lifts and the program finds the part still bearing.</p>
       </div>
       <div class="spec-grid">
         <div class="spec-card reveal">
@@ -135,7 +178,7 @@
           <h3 id="concrete-title">ACI 318-19, worked over every strength combination.</h3>
           <p>The design runs in the same pass as the analysis. The strength cases design the concrete; the allowable-stress cases judge the soil. Every row of the design says which clause it checks.</p>
           <ul class="check-list">
-            <li><strong>Footings:</strong> two-way shear on a critical section at d/2 from each pedestal, merged where sections overlap and trimmed at an edge, with the transferred moment's eccentric shear</li>
+            <li><strong>Footings and mats:</strong> two-way shear on a critical section at d/2 from each pedestal, merged where sections overlap and trimmed at an edge, with the transferred moment's eccentric shear</li>
             <li><strong>One-way shear and flexure</strong> from a section swept across the footing along the bar direction you choose; Table 22.5.5.1 with the size effect</li>
             <li><strong>Four independent mats</strong> sized and the bars picked, with minimum steel, development and standard hooks that must fit</li>
             <li><strong>Pedestals:</strong> axial force and biaxial moment on a full strength surface, plain or reinforced, with ties and seismic detailing</li>
@@ -473,7 +516,7 @@
 
   <section aria-labelledby="closing-title">
     <div class="container closing reveal">
-      <h2 id="closing-title">See it on your next footing.</h2>
+      <h2 id="closing-title">See it on your next foundation.</h2>
       <p>Download FoundaTrix Studio free, with no account, and run a foundation you already know the answer to. Then sign in to try the premium tools for 30 days.</p>
       <div class="cta-row">
         <a class="btn btn--primary btn--lg" href="/#download">Download free</a>
@@ -492,7 +535,7 @@
           <img class="brand__mark" src="/images/foundatrix-mark.svg" alt="" width="34" height="34" />
           <span class="brand__name">FoundaTrix <span>Studio</span></span>
         </a>
-        <p>Analysis and design of spread foundations, for Windows. A Ramisoft Solutions product.</p>
+        <p>Analysis and design of rigid foundations of any shape, for Windows. A Ramisoft Solutions product.</p>
         <p class="sibling">Also from Ramisoft Solutions: <a href="https://www.ramisoftsolutions.com/" target="_blank" rel="noopener">RPile</a>, lateral pile and caisson analysis. One account signs in to both.</p>
       </div>
       <div class="footer__col">

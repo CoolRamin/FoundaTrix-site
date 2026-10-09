@@ -1,7 +1,8 @@
 # FoundaTrix Studio Website
 
 Public source for the product website of **FoundaTrix Studio**, a Windows desktop program by
-Ramisoft Solutions for the analysis and design of spread foundations.
+Ramisoft Solutions for the analysis and design of rigid foundations of any shape: spread, combined,
+strapped and mat foundations with any number of pedestals.
 
 This repository's **Issues** are also the public place to report a bug in the program or ask for a
 feature: see [Reporting bugs and requesting features](#reporting-bugs-and-requesting-features).
@@ -56,7 +57,7 @@ screenshots replace them. Each one lives in `src/images/placeholders/` and is re
 |---|---|---|
 | `studio-overview.svg` | Home (below the hero), Features | The Studio with a site of footings coloured by bearing pressure, its legend, the Model Explorer and Properties |
 | `studio-modelling.svg` | Home | Drawing a footing: a snap marker, a typed dimension and the Command Line's prompt |
-| `bearing-pressure.svg` | Home | One footing's pressure map with a lifted corner and the neutral axis, beside the Results pane |
+| `bearing-pressure.svg` | Home | One foundation's pressure map with a lifted corner and the neutral axis, beside the Results pane |
 | `concrete-design.svg` | Home, Features | The Design pane's checks with their clauses, beside the swept shear and moment envelope |
 | `tables.svg` | Home | The Load Combinations table beside the model |
 | `wizard.svg` | Home, Features | The vertical vessel wizard: steps, questions, the drawing and the checks |
@@ -64,7 +65,8 @@ screenshots replace them. Each one lives in `src/images/placeholders/` and is re
 | `calc-report.svg` | Home, Features | Two pages of the calculation report: a derivation, symbolic then substituted, and a figure |
 | `bim-export.svg` | Home, Features | An exported foundation with reinforcement and anchorage in a BIM viewer |
 
-`src/images/hero-foundation.svg` (the hero's illustration) and `src/images/foundatrix-mark.svg` / `src/favicon.svg`
+`src/images/hero-foundation.svg` (the hero's illustration, a combined footing), `src/images/types/*.svg` (the five
+foundation types) and `src/images/foundatrix-mark.svg` / `src/favicon.svg`
 (the program's own mark, converted from its `Logo.xaml` and `Logo.Small.xaml`) are artwork, not placeholders.
 
 Capture guidance that worked for the sister site: a window of about 1500 x 1000, the workspace band
