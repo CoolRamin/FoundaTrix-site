@@ -73,13 +73,11 @@ Capture guidance that worked for the sister site: a window of about 1500 x 1000,
 rather than the whole window, fictional project, client and site names only, and a link from each
 picture to its full-size file.
 
-## Before publishing: values to confirm
+## Values still to settle
 
 | What | Where | Now |
 |---|---|---|
 | Download link (Microsoft Store) | `src/index.html`, `#download` section, and every "Download" button (`/#download`) | A "coming soon" Store button; replace with the listing URL and Microsoft's official badge |
-| This repository's GitHub URL | Every page (search for `github.com/CoolRamin/FoundaTrix-site`) | `https://github.com/CoolRamin/FoundaTrix-site` |
-| The site's domain | Add `<link rel="canonical">`, `og:url` and a `sitemap.xml` once it is known | Omitted on purpose |
 | Privacy and terms URLs in the program and the Store listing | They point at `https://www.ramisoftsolutions.com/privacy/` and `/terms/` | Keep those pages, or point the program at this site's |
 
 The privacy policy and terms of use are the same text as the pages published on
@@ -98,9 +96,21 @@ then open `http://localhost:8080/`.
 
 ## Deployment
 
-The site is a plain static folder (`src/`) with an Azure Static Web Apps configuration
-(`src/staticwebapp.config.json`: trailing slashes, the 404 page, security headers including a
-content security policy). Deployment wiring is added when the hosting is set up.
+The site is hosted on **Azure Static Web Apps** (Free plan): the app `swa-foundatrix-site` in the
+resource group `rg-lateralpile`, region West US 2. Every push to `main` publishes `src/` through
+`.github/workflows/deploy.yml`, which authenticates with the repository secret
+`AZURE_STATIC_WEB_APPS_API_TOKEN` (the app's deployment token). Pull requests are not deployed.
+`src/staticwebapp.config.json` sets trailing slashes, the 404 page and the security headers,
+including a content security policy.
+
+| Address | DNS at GoDaddy | Role |
+|---|---|---|
+| `https://www.foundatrix.com` | `CNAME www` to the app's `azurestaticapps.net` host | Primary (canonical) address |
+| `https://foundatrix.com` | `A @` to the app's stable inbound IP, validated by a `TXT @` token | Redirects to `www` |
+| `victorious-desert-07deff81e.4.azurestaticapps.net` | (Azure's own) | Redirects to `www` once `www` is the default domain |
+
+The canonical links, `og:url` and `sitemap.xml` all name `https://www.foundatrix.com`. If the
+deployment token is ever rotated in Azure, set the repository secret again.
 
 ## Contributing
 
