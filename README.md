@@ -82,7 +82,7 @@ saved as WebP at quality 84 to 86; then update the `<img>` `width`, `height` and
 
 | What | Where | Now |
 |---|---|---|
-| Download link (Microsoft Store) | `src/index.html`, `#download` section, and every "Download" button (`/#download`) | A "coming soon" Store button; replace with the listing URL and Microsoft's official badge |
+| Download link (Microsoft Store) | `src/index.html`, `#download` section, and every "Download" button (`/#download`) | Settled 2026-10-11: the button links the Store listing, `https://apps.microsoft.com/detail/9PN2N2M02389` (Store ID 9PN2N2M02389), with the site's own Store-bag button rather than Microsoft's badge image, which the strict CSP (`img-src 'self'`) would need hosting locally |
 | Privacy and terms URLs in the program and the Store listing | Since 2026-10-11 they point at this site's `/privacy/` and `/terms/`; the copies on ramisoftsolutions.com are no longer linked by the program | Settled |
 
 The privacy policy and terms of use are the same text as the pages published on
