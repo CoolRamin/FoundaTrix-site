@@ -78,7 +78,7 @@ picture to its full-size file.
 | What | Where | Now |
 |---|---|---|
 | Download link (Microsoft Store) | `src/index.html`, `#download` section, and every "Download" button (`/#download`) | A "coming soon" Store button; replace with the listing URL and Microsoft's official badge |
-| Privacy and terms URLs in the program and the Store listing | They point at `https://www.ramisoftsolutions.com/privacy/` and `/terms/` | Keep those pages, or point the program at this site's |
+| Privacy and terms URLs in the program and the Store listing | Since 2026-10-11 they point at this site's `/privacy/` and `/terms/`; the copies on ramisoftsolutions.com are no longer linked by the program | Settled |
 
 The privacy policy and terms of use are the same text as the pages published on
 www.ramisoftsolutions.com (effective October 5, 2026). Change both together.
