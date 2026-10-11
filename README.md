@@ -62,7 +62,7 @@ own caption, so each capture is cropped below the program's caption row.
 | `concrete-design.webp` | Home, Features | The Envelope pane and the Interaction pane's strength surface |
 | `tables.webp` | Home | The Loads table floating over the model |
 | `wizard.webp` | Home, Features | The vertical vessel wizard's anchorage page with its dimensioned drawings |
-| `deformed-rack.webp`, `deformed-tee.webp` | Home, Features | The pipe rack on its deformed shape (x100) with the steel colours; one bent in elevation |
+| `deformed-rack-tiers.webp` | Home, Features | A three-tier, six-bent pipe rack on its deformed shape (x30) with the steel colours, captured from 1.121 on 2026-10-11 (the "Process unit pipe rack PR-100" sample): a 1500 x 1000 window, the workspace band below the ribbon only, the empty Command Line pane cropped off |
 | `steel-design.webp` | Home, Features | The rack isolated, its members coloured by AISC 360-22 utilisation |
 | `calc-report.webp` | Home, Features | Two report pages: the foundation plan and the wind derivation |
 | `bim-export.webp` | Home, Features | The exported IFC in a third-party viewer (its branding cropped out) |
