@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Segoe UI, Segoe UI Variable Text, Arial, sans-serif">
+  <title>An AI assistant creating a foundation model through the FoundaTrix Studio connector</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1c"/>
+      <stop offset="1" stop-color="#171c45"/>
+    </linearGradient>
+    <linearGradient id="premium" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8f7ee6"/>
+      <stop offset="0.55" stop-color="#c35bd0"/>
+      <stop offset="1" stop-color="#f0388f"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8a9f6"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="rgba(148,163,184,0.09)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+
+  <!-- The assistant's conversation: generic, any assistant that takes a custom connector. -->
+  <rect x="48" y="48" width="620" height="664" rx="20" fill="#121726" stroke="rgba(184,169,246,0.28)"/>
+  <circle cx="84" cy="88" r="14" fill="url(#premium)"/>
+  <path d="M84 79 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6z" fill="#ffffff"/>
+  <text x="108" y="84" font-size="16" font-weight="700" fill="#e2e8f0">Your AI assistant</text>
+  <text x="108" y="104" font-size="12.5" fill="#a3b0c4">Connected to FoundaTrix Studio, signed in as you</text>
+  <line x1="48" y1="128" x2="668" y2="128" stroke="rgba(148,163,184,0.18)"/>
+
+  <!-- The engineer -->
+  <rect x="236" y="150" width="408" height="84" rx="16" fill="#1f6f68"/>
+  <text x="256" y="178" font-size="14.5" fill="#ecfeff">Here is the datasheet for exchanger E-310.</text>
+  <text x="256" y="200" font-size="14.5" fill="#ecfeff">Create its foundation in the job</text>
+  <text x="256" y="222" font-size="14.5" fill="#ecfeff">Area 300 Expansion.</text>
+
+  <!-- Tool calls -->
+  <g font-size="12.5" font-family="Cascadia Mono, Consolas, monospace">
+    <rect x="72" y="254" width="272" height="30" rx="15" fill="rgba(184,169,246,0.12)" stroke="rgba(184,169,246,0.45)"/>
+    <text x="90" y="274" fill="#d6ccff">get_model_schema · exchanger</text>
+    <rect x="356" y="254" width="226" height="30" rx="15" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.55)"/>
+    <text x="374" y="274" fill="#fcd34d">validate_model · 2 missing</text>
+  </g>
+
+  <!-- The assistant asks rather than guesses -->
+  <rect x="72" y="300" width="440" height="84" rx="16" fill="#1c2233" stroke="rgba(148,163,184,0.22)"/>
+  <text x="92" y="328" font-size="14.5" fill="#e2e8f0">The datasheet does not give the operating</text>
+  <text x="92" y="350" font-size="14.5" fill="#e2e8f0">weight or the saddle spacing. What are they?</text>
+  <text x="92" y="372" font-size="12" fill="#a3b0c4">Missing inputs are asked for, never invented.</text>
+
+  <rect x="316" y="404" width="328" height="58" rx="16" fill="#1f6f68"/>
+  <text x="336" y="438" font-size="14.5" fill="#ecfeff">58 kip operating, saddles 14 ft apart.</text>
+
+  <g font-size="12.5" font-family="Cascadia Mono, Consolas, monospace">
+    <rect x="72" y="482" width="190" height="30" rx="15" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.55)"/>
+    <text x="90" y="502" fill="#86efac">validate_model · ok</text>
+    <rect x="274" y="482" width="176" height="30" rx="15" fill="rgba(45,212,191,0.12)" stroke="rgba(45,212,191,0.55)"/>
+    <text x="292" y="502" fill="#5eead4">create_model · ok</text>
+  </g>
+
+  <rect x="72" y="528" width="512" height="106" rx="16" fill="#1c2233" stroke="rgba(148,163,184,0.22)"/>
+  <text x="92" y="556" font-size="14.5" fill="#e2e8f0">Created the E-310 foundation in Area 300 Expansion,</text>
+  <text x="92" y="578" font-size="14.5" fill="#e2e8f0">sized by the same checks and calculation as the wizard.</text>
+  <text x="92" y="600" font-size="14.5" fill="#e2e8f0">It has not been analysed yet: open it in the program</text>
+  <text x="92" y="622" font-size="14.5" fill="#e2e8f0">and run the analysis.</text>
+
+  <rect x="72" y="656" width="572" height="38" rx="19" fill="#0e1320" stroke="rgba(148,163,184,0.22)"/>
+  <text x="94" y="680" font-size="13.5" fill="#64748b">Ask your assistant…</text>
+
+  <!-- The connector -->
+  <path d="M668 380 C 720 380, 730 300, 790 300" fill="none" stroke="url(#wire)" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <path d="M668 380 C 720 380, 730 470, 790 470" fill="none" stroke="url(#wire)" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <rect x="682" y="362" width="96" height="36" rx="18" fill="#121726" stroke="rgba(45,212,191,0.6)"/>
+  <text x="730" y="385" font-size="12.5" font-weight="600" fill="#5eead4" text-anchor="middle">MCP</text>
+
+  <!-- The cloud: the job and the new model -->
+  <rect x="790" y="180" width="362" height="240" rx="20" fill="#f8fafc"/>
+  <text x="818" y="216" font-size="12" font-weight="700" fill="#0f766e" letter-spacing="1.2">FOUNDATRIX CLOUD</text>
+  <text x="818" y="244" font-size="18" font-weight="700" fill="#0f172a">Area 300 Expansion</text>
+  <text x="818" y="266" font-size="12.5" fill="#64748b">Job · 3 models</text>
+  <line x1="818" y1="282" x2="1124" y2="282" stroke="#e2e8f0"/>
+  <g font-size="13.5" fill="#0f172a">
+    <rect x="818" y="294" width="306" height="34" rx="8" fill="#f1f5f9"/>
+    <text x="832" y="316">V-301 vertical vessel</text>
+    <rect x="818" y="334" width="306" height="34" rx="8" fill="#f1f5f9"/>
+    <text x="832" y="356">PR-3 pipe rack, 4 bents</text>
+    <rect x="818" y="374" width="306" height="34" rx="8" fill="#ccfbf1" stroke="#2dd4bf"/>
+    <text x="832" y="396" font-weight="600">E-310 exchanger</text>
+    <text x="1112" y="396" font-size="11.5" fill="#0f766e" text-anchor="end">new</text>
+  </g>
+
+  <!-- What the program checks -->
+  <rect x="790" y="450" width="362" height="262" rx="20" fill="#121726" stroke="rgba(148,163,184,0.22)"/>
+  <text x="818" y="486" font-size="12" font-weight="700" fill="#b8a9f6" letter-spacing="1.2">THE SAME PROGRAM BEHIND IT</text>
+  <g font-size="13.5" fill="#e2e8f0">
+    <circle cx="826" cy="516" r="9" fill="#2f9e5a"/><polyline points="821.5,516 825,519.5 830.5,512.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="521">The wizard pages' own checks</text>
+    <circle cx="826" cy="550" r="9" fill="#2f9e5a"/><polyline points="821.5,550 825,553.5 830.5,546.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="555">Build Foundation's calculation</text>
+    <circle cx="826" cy="584" r="9" fill="#2f9e5a"/><polyline points="821.5,584 825,587.5 830.5,580.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="589">Saved in your name, as you</text>
+    <circle cx="826" cy="618" r="9" fill="#2f9e5a"/><polyline points="821.5,618 825,621.5 830.5,614.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="623">Missing inputs reported, not guessed</text>
+    <circle cx="826" cy="652" r="9" fill="#475569"/><line x1="822" y1="652" x2="830" y2="652" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="846" y="657" fill="#a3b0c4">Does not change or delete models</text>
+    <circle cx="826" cy="686" r="9" fill="#475569"/><line x1="822" y1="686" x2="830" y2="686" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="846" y="691" fill="#a3b0c4">Does not run the analysis or release</text>
+  </g>
+</svg>

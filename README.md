@@ -1,7 +1,7 @@
 # FoundaTrix Studio Website
 
 Public source for the product website of **FoundaTrix Studio**, a Windows desktop program by
-Ramisoft Solutions for the analysis and design of rigid foundations of any shape: spread, combined,
+RamisoftSolutions for the analysis and design of rigid foundations of any shape: spread, combined,
 strapped and mat foundations with any number of pedestals.
 
 This repository's **Issues** are also the public place to report a bug in the program or ask for a
@@ -46,32 +46,37 @@ or images: everything it loads comes from its own folder.
 live in folders, so a relative path that works from `/` breaks from `/pricing/`, and for a
 stylesheet it fails silently: the page still renders, unstyled.
 
-## Placeholder artwork
+## Screenshots and artwork
 
-The product pictures are **placeholders**, drawn as SVG to look like the program, until real
-screenshots replace them. Each one lives in `src/images/placeholders/` and is referenced by an
-`<img>` inside a `.shot` frame, so replacing one is: save the screenshot as a PNG under
-`src/images/`, point the `src` at it, and update the `width`, `height` and `alt` attributes.
+The product pictures are **real screenshots** of FoundaTrix Studio 1.120, taken on 2026-10-11 from
+a fictional sample ("Area 200 Foundations": two vertical vessels, two exchangers, a four-bent pipe
+rack, an L-shaped combined footing and an octagonal footing, every name made up). They live in
+`src/images/screens/` as WebP and sit inside a `.shot` frame, whose bar stands in for the window's
+own caption, so each capture is cropped below the program's caption row.
 
-| Placeholder | Used on | The screenshot it stands in for |
+| File | Used on | What it shows |
 |---|---|---|
-| `studio-overview.svg` | Home (below the hero), Features | The Studio with a site of footings coloured by bearing pressure, its legend, the Model Explorer and Properties |
-| `studio-modelling.svg` | Home | Drawing a footing: a snap marker, a typed dimension and the Command Line's prompt |
-| `bearing-pressure.svg` | Home | One foundation's pressure map with a lifted corner and the neutral axis, beside the Results pane |
-| `concrete-design.svg` | Home, Features | The Design pane's checks with their clauses, beside the swept shear and moment envelope |
-| `tables.svg` | Home | The Load Combinations table beside the model |
-| `wizard.svg` | Home, Features | The vertical vessel wizard: steps, questions, the drawing and the checks |
-| `steel-design.svg` | Home, Features | A pipe rack coloured by AISC 360-22 utilisation, with the Steel pane |
-| `calc-report.svg` | Home, Features | Two pages of the calculation report: a derivation, symbolic then substituted, and a figure |
-| `bim-export.svg` | Home, Features | An exported foundation with reinforcement and anchorage in a BIM viewer |
+| `studio-overview.webp` | Home (below the hero), Features | The whole site in X-ray: bearing pressure through the concrete, verdict badges, the rack's steel colours |
+| `studio-modelling.webp` | Home | An octagonal footing drawn from the command line, a pedestal being placed on its snapped centre |
+| `bearing-pressure.webp` | Home | From below: an L-shaped footing with its base partly lifted, beside the Results pane |
+| `concrete-design.webp` | Home, Features | The Envelope pane and the Interaction pane's strength surface |
+| `tables.webp` | Home | The Loads table floating over the model |
+| `wizard.webp` | Home, Features | The vertical vessel wizard's anchorage page with its dimensioned drawings |
+| `deformed-rack.webp`, `deformed-tee.webp` | Home, Features | The pipe rack on its deformed shape (x100) with the steel colours; one bent in elevation |
+| `steel-design.webp` | Home, Features | The rack isolated, its members coloured by AISC 360-22 utilisation |
+| `calc-report.webp` | Home, Features | Two report pages: the foundation plan and the wind derivation |
+| `bim-export.webp` | Home, Features | The exported IFC in a third-party viewer (its branding cropped out) |
 
-`src/images/hero-foundation.svg` (the hero's illustration, a combined footing), `src/images/types/*.svg` (the five
-foundation types) and `src/images/foundatrix-mark.svg` / `src/favicon.svg`
-(the program's own mark, converted from its `Logo.xaml` and `Logo.Small.xaml`) are artwork, not placeholders.
+`src/images/assistant-connector.svg` is an illustration, not a screenshot: a generic assistant
+conversation (deliberately not any one assistant's interface) creating a model through the connector,
+with the tool names the endpoint really exposes. `src/images/hero-foundation.svg` (the hero's
+illustration, a combined footing), `src/images/types/*.svg` (the five foundation types) and
+`src/images/foundatrix-mark.svg` / `src/favicon.svg` (the program's own mark, converted from its
+`Logo.xaml` and `Logo.Small.xaml`) are artwork.
 
-Capture guidance that worked for the sister site: a window of about 1500 x 1000, the workspace band
-rather than the whole window, fictional project, client and site names only, and a link from each
-picture to its full-size file.
+When replacing a screenshot: fictional project, client, equipment and site names only (never a real
+project's), a dark-theme window of about 1700 x 1075 or 1700 x 1280, cropped below the caption row,
+saved as WebP at quality 84 to 86; then update the `<img>` `width`, `height` and `alt`.
 
 ## Values still to settle
 
