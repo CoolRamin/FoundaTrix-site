@@ -105,7 +105,7 @@
     <text x="846" y="623">Missing inputs reported, not guessed</text>
     <circle cx="826" cy="652" r="9" fill="#475569"/><line x1="822" y1="652" x2="830" y2="652" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
     <text x="846" y="657" fill="#a3b0c4">Does not change or delete models</text>
-    <circle cx="826" cy="686" r="9" fill="#475569"/><line x1="822" y1="686" x2="830" y2="686" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-    <text x="846" y="691" fill="#a3b0c4">Does not run the analysis or release</text>
+    <circle cx="826" cy="686" r="9" fill="#2f9e5a"/><polyline points="821.5,686 825,689.5 830.5,682.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="691">Saved unanalysed, for you to run</text>
   </g>
 </svg>
