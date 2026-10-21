@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Segoe UI, Segoe UI Variable Text, Arial, sans-serif">
+  <title>A pile cap on nine piles, each pile coloured by its axial force over its resistance, with its force beside it</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0f1c"/><stop offset="1" stop-color="#171c45"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="rgba(148,163,184,0.09)" stroke-width="1"/></pattern>
+    <linearGradient id="p40" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#93c5fd"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <linearGradient id="p55" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#86efac"/><stop offset="1" stop-color="#16a34a"/></linearGradient>
+    <linearGradient id="p70" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#ca8a04"/></linearGradient>
+    <linearGradient id="p85" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fdba74"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+    <linearGradient id="ramp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2563eb"/><stop offset="0.4" stop-color="#16a34a"/><stop offset="0.7" stop-color="#ca8a04"/><stop offset="0.9" stop-color="#ea580c"/><stop offset="1" stop-color="#dc2626"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <ellipse cx="400" cy="600" rx="330" ry="34" fill="rgba(45,212,191,0.06)"/>
+  <path d="M386.33 336.4 H413.67 V528.6 A13.67 7.89 0 0 1 386.33 528.6 Z" fill="url(#p40)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M321.9 373.6 H349.24 V565.8 A13.67 7.89 0 0 1 321.9 565.8 Z" fill="url(#p40)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M450.76 373.6 H478.1 V565.8 A13.67 7.89 0 0 1 450.76 565.8 Z" fill="url(#p55)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M257.47 410.8 H284.8 V603 A13.67 7.89 0 0 1 257.47 603 Z" fill="url(#p40)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M386.33 410.8 H413.67 V603 A13.67 7.89 0 0 1 386.33 603 Z" fill="url(#p55)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M515.2 410.8 H542.53 V603 A13.67 7.89 0 0 1 515.2 603 Z" fill="url(#p85)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M321.9 448 H349.24 V640.2 A13.67 7.89 0 0 1 321.9 640.2 Z" fill="url(#p55)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M450.76 448 H478.1 V640.2 A13.67 7.89 0 0 1 450.76 640.2 Z" fill="url(#p70)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <path d="M386.33 485.2 H413.67 V677.4 A13.67 7.89 0 0 1 386.33 677.4 Z" fill="url(#p70)" stroke="rgba(15,23,42,0.55)" stroke-width="0.8"/>
+  <polygon points="593.3,373.6 400,485.2 400,522.4 593.3,410.8" fill="#8F7EE6" stroke="rgba(15,23,42,0.55)" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="206.7,373.6 400,485.2 400,522.4 206.7,410.8" fill="#B8A9F6" stroke="rgba(15,23,42,0.55)" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="400,262 593.3,373.6 400,485.2 206.7,373.6" fill="#E4DAFF" stroke="rgba(15,23,42,0.55)" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="448.32,311.6 400,339.5 400,401.5 448.32,373.6" fill="#3B9F9A" stroke="rgba(15,23,42,0.55)" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="351.68,311.6 400,339.5 400,401.5 351.68,373.6" fill="#6CCBC5" stroke="rgba(15,23,42,0.55)" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="400,283.7 448.32,311.6 400,339.5 351.68,311.6" fill="#AFEDE9" stroke="rgba(15,23,42,0.55)" stroke-width="0.8" stroke-linejoin="round"/>
+  <line x1="400" y1="255.8" x2="400" y2="300.83" stroke="#F0388F" stroke-width="4"/>
+  <polygon points="400,311.6 393,297.6 407,297.6" fill="#F0388F"/>
+  <line x1="480.54" y1="367.4" x2="433.16" y2="329.85" stroke="#F0388F" stroke-width="4"/>
+  <polygon points="424.16,334.85 439.16,332.85 433.16,322.85" fill="#F0388F"/>
+  <g><rect x="237.14" y="613" width="68" height="22" rx="11" fill="#121726" stroke="rgba(148,163,184,0.35)"/><text x="271.14" y="628.5" font-size="11.5" fill="#e2e8f0" text-anchor="middle">P3 · 96 k</text></g>
+  <g><rect x="301.57" y="650.2" width="68" height="22" rx="11" fill="#121726" stroke="rgba(148,163,184,0.35)"/><text x="335.57" y="665.7" font-size="11.5" fill="#e2e8f0" text-anchor="middle">P6 · 118 k</text></g>
+  <g><rect x="494.86" y="613" width="68" height="22" rx="11" fill="#121726" stroke="rgba(148,163,184,0.35)"/><text x="528.86" y="628.5" font-size="11.5" fill="#e2e8f0" text-anchor="middle">P7 · 162 k</text></g>
+  <g><rect x="430.43" y="650.2" width="68" height="22" rx="11" fill="#121726" stroke="rgba(148,163,184,0.35)"/><text x="464.43" y="665.7" font-size="11.5" fill="#e2e8f0" text-anchor="middle">P8 · 154 k</text></g>
+  <g><rect x="366" y="687.4" width="68" height="22" rx="11" fill="#121726" stroke="rgba(148,163,184,0.35)"/><text x="400" y="702.9" font-size="11.5" fill="#e2e8f0" text-anchor="middle">P9 · 146 k</text></g>
+  <g>
+    <rect x="315" y="150" width="170" height="34" rx="17" fill="#14532d" stroke="#22c55e"/>
+    <text x="400" y="172" font-size="14" font-weight="700" fill="#bbf7d0" text-anchor="middle">PASS · 0.81</text>
+  </g>
+
+  <rect x="790" y="66" width="362" height="160" rx="20" fill="#f8fafc"/>
+  <text x="818" y="102" font-size="12" font-weight="700" fill="#0f766e" letter-spacing="1.2">PILE FORCES · LEGEND</text>
+  <text x="818" y="130" font-size="15" font-weight="700" fill="#0f172a">1.2D + 1.0W + L (strength)</text>
+  <text x="818" y="152" font-size="12.5" fill="#64748b">Axial force over factored resistance</text>
+  <rect x="818" y="168" width="306" height="14" rx="7" fill="url(#ramp)"/>
+  <g font-size="11.5" fill="#64748b"><text x="818" y="200">0</text><text x="971" y="200" text-anchor="middle">0.5</text><text x="1124" y="200" text-anchor="end">1.0</text></g>
+
+  <rect x="790" y="250" width="362" height="444" rx="20" fill="#121726" stroke="rgba(148,163,184,0.22)"/>
+  <text x="818" y="286" font-size="12" font-weight="700" fill="#b8a9f6" letter-spacing="1.2">EACH PILE, ITS OWN PILEAXIS ANALYSIS</text>
+  <g font-size="13.5" fill="#e2e8f0">
+    <circle cx="826" cy="318" r="9" fill="#2f9e5a"/><polyline points="821.5,318 825,321.5 830.5,314.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="323">Axially, its own t-z and tip response</text>
+    <circle cx="826" cy="354" r="9" fill="#2f9e5a"/><polyline points="821.5,354 825,357.5 830.5,350.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="359">Laterally, its own p-y curves</text>
+    <circle cx="826" cy="390" r="9" fill="#2f9e5a"/><polyline points="821.5,390 825,393.5 830.5,386.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="395">The cap rigid, balanced on its piles</text>
+    <circle cx="826" cy="426" r="9" fill="#2f9e5a"/><polyline points="821.5,426 825,429.5 830.5,422.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="846" y="431">in all six directions, every combination</text>
+  </g>
+  <line x1="818" y1="456" x2="1124" y2="456" stroke="rgba(148,163,184,0.18)"/>
+  <text x="818" y="486" font-size="12" font-weight="700" fill="#b8a9f6" letter-spacing="1.2">CHECKED ON EVERY PILE</text>
+  <g font-size="13.5" fill="#e2e8f0">
+    <text x="818" y="516">Compression against its resistance</text>
+    <text x="818" y="544">Uplift against its pull-out resistance</text>
+    <text x="818" y="572">The soil beside it, at the worst depth</text>
+    <text x="818" y="600">Its section: axial force with bending,</text>
+    <text x="818" y="622">and shear, by PileAxis's own checks</text>
+  </g>
+  <text x="818" y="664" font-size="12" fill="#a3b0c4">Allowable resistances on service combinations,</text>
+  <text x="818" y="682" font-size="12" fill="#a3b0c4">factored ones on strength combinations.</text>
+</svg>

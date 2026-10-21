@@ -982,7 +982,7 @@ section {
 
 .types {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 0;
   padding: 0;
@@ -1485,6 +1485,14 @@ section {
 
 .assistant__art {
   margin: 0;
+}
+
+.assistant + .assistant {
+  margin-top: 72px;
+}
+
+.assistant--flip {
+  grid-template-columns: 1.15fr 0.85fr;
 }
 
 .assistant__art img {

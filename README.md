@@ -69,8 +69,14 @@ own caption, so each capture is cropped below the program's caption row.
 
 `src/images/assistant-connector.svg` is an illustration, not a screenshot: a generic assistant
 conversation (deliberately not any one assistant's interface) creating a model through the connector,
-with the tool names the endpoint really exposes. `src/images/hero-foundation.svg` (the hero's
-illustration, a combined footing), `src/images/types/*.svg` (the five foundation types) and
+with the tool names the endpoint really exposes. `src/images/assistant-whatif.svg` (2026-10-20, program 1.147) is
+its companion: the same generic conversation running what-if versions of a footing on the engineer's computer, and the
+proposal in the program's Assistant Requests pane with Apply and Decline, the desktop link's real tool names on it.
+`src/images/pile-cap.svg` (the same day, program 1.127 and later) illustrates a foundation on piles: a cap on nine piles
+coloured by their axial ratio, generated as an isometric drawing rather than captured; a screenshot of a real pile cap
+from a fictional job can replace it. `src/images/hero-foundation.svg` (the hero's
+illustration, a combined footing), `src/images/types/*.svg` (the six foundation types, `type-pilecap.svg` added
+2026-10-20 in the same isometric style) and
 `src/images/foundatrix-mark.svg` / `src/favicon.svg` (the program's own mark, converted from its
 `Logo.xaml` and `Logo.Small.xaml`) are artwork.
 

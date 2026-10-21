@@ -36,7 +36,7 @@
 <div class="announce-bar">
   <div class="container announce-bar__inner">
     <span class="announce-bar__tag">New</span>
-    <span>Connect your AI assistant: it can now create wizard foundations in your cloud jobs, checked by the program's own rules.</span>
+    <span>Your AI assistant can now run what-if analyses of a footing on your own computer. It proposes; you apply.</span>
     <a href="/#assistant">See how &rarr;</a>
   </div>
 </div>
@@ -157,7 +157,7 @@
       <div class="section-head section-head--center reveal">
         <p class="eyebrow">Every rigid foundation</p>
         <h2 id="types-title">Not just spread footings.</h2>
-        <p>Spread, combined, strapped or mat; rectangular, round, octagonal or any polygon; one pedestal or dozens. If the foundation can be treated as rigid, one exact method finds its bearing pressure, checks its stability and designs its concrete.</p>
+        <p>Spread, combined, strapped or mat; rectangular, round, octagonal or any polygon; one pedestal or dozens; on the soil or on piles. If the foundation can be treated as rigid, one exact method finds its bearing pressure or its pile forces, checks its stability and designs its concrete.</p>
       </div>
       <ul class="types">
         <li class="type-card reveal">
@@ -185,10 +185,15 @@
           <h3>Any outline</h3>
           <p>Rectangles, circles, octagons and irregular polygons, with pedestals of any shape placed anywhere on them.</p>
         </li>
+        <li class="type-card reveal">
+          <div class="type-card__art"><img src="/images/types/type-pilecap.svg" width="260" height="170" alt="" loading="lazy" /></div>
+          <h3>Pile caps <span class="badge badge--premium">New</span></h3>
+          <p>A rigid cap of any outline on piles in any pattern, each pile analysed by its own PileAxis analysis.</p>
+        </li>
       </ul>
       <p class="types-note reveal">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
-        <span><strong>The one condition: the foundation acts as a rigid body.</strong> It must be stiff enough for the bearing pressure to vary linearly across the base: the classical assumption the whole method rests on. Where part of the base lifts, the soil carries nothing there and the program finds the part still bearing.</span>
+        <span><strong>The one condition: the foundation acts as a rigid body.</strong> It must be stiff enough for the bearing pressure to vary linearly across the base: the classical assumption the whole method rests on. Where part of the base lifts, the soil carries nothing there and the program finds the part still bearing. On piles, the rigid cap is balanced on its piles and the piles carry everything.</span>
       </p>
     </div>
   </section>
@@ -412,6 +417,26 @@
         </figure>
       </div>
 
+      <div id="piles" class="premium-showcase reveal">
+        <figure class="shot">
+          <div class="shot__frame">
+            <div class="shot__bar"><img src="/favicon.svg" alt="" width="16" height="16" /><span class="shot__title">Results &middot; Pile forces</span><span class="shot__controls" aria-hidden="true"><span class="min"></span><span class="max"></span><span class="close"></span></span></div>
+            <div class="shot__body"><img src="/images/pile-cap.svg" width="1200" height="760" loading="lazy" alt="Illustration of a pile cap on nine piles under a vertical and a lateral load, each pile coloured by its axial force over its factored resistance and the front piles labelled with their forces, the cap's badge reading PASS 0.81, beside the legend and what each pile is checked for." /></div>
+          </div>
+        </figure>
+        <div>
+          <span class="badge badge--premium">Premium &middot; New</span>
+          <h3>Foundations on piles, with PileAxis.</h3>
+          <p>Stand a cap of any outline on piles in any pattern. Each pile is a copy of a pile analysis from a PileAxis design in the same cloud job, so it answers with its own soil, section and length. The cap is balanced on its piles for every combination. It needs a subscription or trial to PileAxis as well, and the cap's own concrete design comes in a later version.</p>
+          <ul class="check-list check-list--premium">
+            <li>Each pile's head force from its own t-z and tip response, and its bending from its own p-y curves, in both directions</li>
+            <li>Compression, uplift, the soil beside each pile and each pile's section checked, allowable or factored by the combination's basis</li>
+            <li>Piles coloured on the model by their axial ratio, with their forces, in any combination you choose</li>
+            <li>A copy stays as it was copied until you bring it up to date, so a change in PileAxis never moves a foundation behind your back</li>
+          </ul>
+        </div>
+      </div>
+
       <ul class="families" aria-label="Wizard families">
         <li class="family reveal">
           <svg viewBox="0 0 160 92" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -544,18 +569,18 @@
       <div class="assistant reveal">
         <div class="assistant__text">
           <p class="eyebrow">New &middot; AI assistants</p>
-          <h2 id="assistant-title">Hand the datasheet to your AI assistant.</h2>
-          <p>FoundaTrix Studio's cloud has a connector for AI assistants that accept custom MCP connectors, Claude among them. Give your assistant a vendor's cut sheet, a drawing or your notes, and it can create the wizard foundation in your cloud job. The program behind it is the same one: the inputs are checked by the wizard pages' own checks and the foundation is sized by the same calculation as Build Foundation at the desk.</p>
+          <h2 id="assistant-title">Ask your AI assistant for a what-if. Your computer runs it.</h2>
+          <p>Connect an AI assistant that accepts custom MCP connectors, Claude among them, and it can study the footing you have open: change what you ask, run the versions on your own computer with FoundaTrix Studio's own analysis and design, compare them, and propose the one that works. You click Apply, or Decline.</p>
           <ul class="check-list">
-            <li>It works as you: it signs in with your account, sees only your projects and saves in your name</li>
-            <li>It lists your jobs, reads a job and its models, creates a job, and describes every wizard kind</li>
-            <li>Missing information is reported and asked for, never invented; nothing is saved until the inputs pass</li>
-            <li>It does not change or delete a model, run the analysis, write the report or release a foundation: those stay at the desk</li>
+            <li>Off until you allow it on each computer; every request is listed where you can watch it and cancel it</li>
+            <li>Up to eight changed versions at a time, each checked first and run on its own copy of your model</li>
+            <li>A proposal shows every change and its results beside yours, and one Ctrl+Z takes an applied one back</li>
+            <li>In your cloud, it also searches every project you can open, and creates wizard foundations and footings from a cut sheet, a drawing or your notes, never inventing a missing value</li>
           </ul>
-          <p class="assistant__note">How to connect your assistant is explained in the program's user's manual (Help &gt; User's Manual). Checking a set of inputs needs only an account; creating a model is a premium feature, free during the 30-day promotional period. A model an assistant creates has not been analysed: open it, run the analysis and check its inputs against the source, as you would a colleague's.</p>
+          <p class="assistant__note">How to connect your assistant is explained in the program's user's manual (Help &gt; User's Manual). It works as you, with your own account. Running what-ifs, searching projects and creating a footing need only an account; a wizard foundation or a foundation on piles needs the same subscription the desk does, free during the 30-day promotional period. What an assistant proposes or creates is its reading of what you asked: check it as you would a colleague's.</p>
         </div>
         <figure class="assistant__art">
-          <img src="/images/assistant-connector.svg" width="1200" height="760" loading="lazy" alt="Illustration: an engineer asks an AI assistant to create an exchanger foundation from a datasheet; the assistant reads the model type's description, finds two inputs missing and asks for them, then validates and creates the model, which appears in the job in the FoundaTrix cloud. Beside it, what the program does behind the connector." />
+          <img src="/images/assistant-whatif.svg" width="1200" height="760" loading="lazy" alt="Illustration: an engineer asks an AI assistant to try a failing footing a foot longer on every side and, separately, thicker; both versions run in FoundaTrix Studio on the engineer's computer, the longer one passes and is proposed, and the engineer's Assistant Requests pane shows its changes and results with Apply and Decline." />
         </figure>
       </div>
     </div>
@@ -609,6 +634,7 @@
           <p class="tier__blurb">Every premium capability without a time limit, for engineers and firms. Try all of it free today.</p>
           <ul class="check-list check-list--premium check-list--sm">
             <li>Wizards for five families of equipment</li>
+            <li>Foundations on piles, with PileAxis</li>
             <li>Steel design to AISC 360-22</li>
             <li>The typeset calculation report</li>
             <li>IFC 4.3 and Revit export</li>
