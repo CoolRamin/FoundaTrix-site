@@ -66,6 +66,7 @@ own caption, so each capture is cropped below the program's caption row.
 | `steel-design.webp` | Home, Features | The rack isolated, its members coloured by AISC 360-22 utilisation |
 | `calc-report.webp` | Home, Features | Two report pages: the foundation plan and the wind derivation |
 | `bim-export.webp` | Home, Features | The exported IFC in a third-party viewer (its branding cropped out) |
+| `breaker-from-datasheet.webp` | Home `#assistant` | A dead-tank circuit breaker an AI assistant created from the manufacturer's outline drawing, then run at the desk: the stand on its deformed shape with steel colours over the bearing pressure (the owner's capture, 2026-10-20, program 1.147). The vendor's drawing itself is NOT published: it is the manufacturer's, and the caption describes it instead |
 
 `src/images/assistant-connector.svg` is an illustration, not a screenshot: a generic assistant
 conversation (deliberately not any one assistant's interface) creating a model through the connector,
