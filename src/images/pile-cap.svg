@@ -49,7 +49,7 @@
   <g font-size="11.5" fill="#64748b"><text x="818" y="200">0</text><text x="971" y="200" text-anchor="middle">0.5</text><text x="1124" y="200" text-anchor="end">1.0</text></g>
 
   <rect x="790" y="250" width="362" height="444" rx="20" fill="#121726" stroke="rgba(148,163,184,0.22)"/>
-  <text x="818" y="286" font-size="12" font-weight="700" fill="#b8a9f6" letter-spacing="1.2">EACH PILE, ITS OWN PILEAXIS ANALYSIS</text>
+  <text x="818" y="286" font-size="12" font-weight="700" fill="#b8a9f6" letter-spacing="1.2">EACH PILE, ITS OWN PILETRIX ANALYSIS</text>
   <g font-size="13.5" fill="#e2e8f0">
     <circle cx="826" cy="318" r="9" fill="#2f9e5a"/><polyline points="821.5,318 825,321.5 830.5,314.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="846" y="323">Axially, its own t-z and tip response</text>
@@ -67,7 +67,7 @@
     <text x="818" y="544">Uplift against its pull-out resistance</text>
     <text x="818" y="572">The soil beside it, at the worst depth</text>
     <text x="818" y="600">Its section: axial force with bending,</text>
-    <text x="818" y="622">and shear, by PileAxis's own checks</text>
+    <text x="818" y="622">and shear, by PileTrix Studio's checks</text>
   </g>
   <text x="818" y="664" font-size="12" fill="#a3b0c4">Allowable resistances on service combinations,</text>
   <text x="818" y="682" font-size="12" fill="#a3b0c4">factored ones on strength combinations.</text>
