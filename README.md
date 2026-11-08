@@ -1,11 +1,79 @@
-# FoundaTrix Studio Website
+# FoundaTrix Studio
 
-Public source for the product website of **FoundaTrix Studio**, a Windows desktop program by
-RamisoftSolutions for the analysis and design of rigid foundations of any shape: spread, combined,
-strapped and mat foundations with any number of pedestals.
+**FoundaTrix Studio** is professional Windows software by RamisoftSolutions for the analysis and design of rigid
+foundations of any shape: spread, combined, strapped and mat foundations on any outline, carrying any number of pedestals,
+under columns, vessels, heat exchangers, substation equipment and pipe supports. It solves the bearing pressure under a
+rigid base exactly, a partly lifted base included, checks overturning and sliding, and designs the concrete to ACI 318-19.
+The analysis, the design and the calculation report are free, with no limit on model size or time and no account required.
 
-This repository's **Issues** are also the public place to report a bug in the program or ask for a
-feature: see [Reporting bugs and requesting features](#reporting-bugs-and-requesting-features).
+**Latest version: 1.168 (November 7, 2026).** [Website](https://www.foundatrix.com/) ·
+[Features](https://www.foundatrix.com/features/) · [What's new](https://www.foundatrix.com/whats-new/) ·
+[Changelog](CHANGELOG.md) · [Microsoft Store](https://apps.microsoft.com/detail/9PN2N2M02389)
+
+> This README describes the program as of its latest version. The website, https://www.foundatrix.com, is the complete and
+> authoritative description of what the program does, with its limits stated on the features page. This repository holds
+> the website's source and the program's public issue tracker; the program's own source is private.
+
+## What FoundaTrix Studio does
+
+- **Rigid foundations of any type and shape**: spread, combined, strapped and mat foundations, rectangular, circular,
+  octagonal or irregular, with any number of pedestals, modelled in a 3D Studio with drafting precision or typed into
+  spreadsheet-style tables beside the model.
+- **Bearing pressure** under a rigid base for every allowable stress combination, a partly lifted base included, solved for
+  the neutral axis that puts the pressure resultant where the load acts; **overturning and sliding**.
+- **Loads**: service loads combined by ASCE 7-22 (strength and allowable stress, seismic included), or your own supplied
+  combinations analysed as they are.
+- **ACI 318-19 design**: one-way shear and flexure from a swept envelope, the four mats and their bars, two-way shear,
+  pedestal axial force and moment on a biaxial strength surface, strap footings, and cast-in anchor rods to Chapter 17.
+- **Wizards** (premium) that build a complete, loaded foundation from a questionnaire: vertical vessels, horizontal vessels
+  and heat exchangers, substation equipment and pipe supports, each decision recorded with the clause behind it.
+- **Steel stands and racks** (premium) analysed as 3D frames by the direct analysis method and designed to AISC 360-22,
+  base plates to AISC Design Guide 1, with a member detail that works every check equation by equation.
+- **Foundations on piles** (premium, with a PileTrix Studio subscription or trial): pile models copied from the job's
+  PileTrix Studio analyses and the rigid cap analysed on its piles under every combination.
+- **Loads from StruTrix Studio** (premium, with a StruTrix Studio subscription or trial): a StruTrix Studio structure saved
+  in the same cloud job gives the model its loads, its supports' reactions read by load case or as its combinations,
+  placing a footing at each support or loading the pedestals there, its latest saved version taken before every run.
+- **The calculation report**: a typeset PDF printing every derivation symbolically and with your numbers substituted,
+  beside its clause; free, the firm's name and logo on it premium.
+- **Exchange** (premium): export to IFC 4.3, and to Revit as native elements through the included Revit add-in.
+- **Cloud and AI** (free account): cloud jobs shared with PileTrix Studio and StruTrix Studio, version history, a recycle
+  bin, and a connector through which your own AI assistant creates foundations and runs what-if analyses that only you
+  apply.
+
+## New in version 1.168
+
+- File > Import > From StruTrix Studio: footing loads read from a StruTrix Studio structure saved in the same cloud job.
+- With nothing selected, the view turns about the centre of the model, and a pan holds the point pressed on.
+- The User's Manual rearranged in seventeen sections, with a pictured tutorial.
+
+Every release's notes are in [CHANGELOG.md](CHANGELOG.md) and on the website's
+[What's new](https://www.foundatrix.com/whats-new/) page.
+
+## Common questions
+
+- **Can FoundaTrix Studio read loads from a structural analysis?** Yes: since version 1.168 it reads a StruTrix Studio
+  structure's support reactions from the same cloud job (premium, with a StruTrix Studio subscription or trial of your own).
+- **Does it model the soil?** No. The bearing pressure is solved under a rigid base; the allowable bearing pressure and the
+  other geotechnical inputs are taken as given. For a foundation on piles, the piles' own soil response comes from their
+  PileTrix Studio analyses.
+- **Is it free?** The modelling, the bearing pressure, stability and ACI 318-19 design, and the calculation report are free,
+  with no limit on model size or time, no watermark added and no account. It is professional software for real projects,
+  not a student or evaluation edition. Premium capabilities are a separate set, free to try.
+- **Is a pile cap's concrete designed?** Not yet: a foundation on piles is analysed and its piles judged, and the cap's
+  concrete design on the piles' reactions is the next version's.
+
+## About this repository
+
+This repository is the public source for the product website of FoundaTrix Studio, www.foundatrix.com. Its **Issues** are
+also the public place to report a bug in the program or ask for a feature: see
+[Reporting bugs and requesting features](#reporting-bugs-and-requesting-features).
+
+**With every Store release**, update together: a new card on top of `src/whats-new/index.html`, the same notes on top of
+[CHANGELOG.md](CHANGELOG.md), this README's "Latest version", "What FoundaTrix Studio does", "New in version" and "Common
+questions", `src/llms.txt`, and the repository's GitHub description and topics where the headline features change. AI
+search tools read this README as the program's description, so a feature missing here reads to them as a feature the
+program lacks.
 
 ## Scope of this repository
 
