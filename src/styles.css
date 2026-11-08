@@ -2772,3 +2772,86 @@ section {
     transform: none;
   }
 }
+
+/* ---------- What's new: the release notes page, newest first (/whats-new/) ---------- */
+
+.releases {
+  display: grid;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.release {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 30px 34px 24px;
+  box-shadow: var(--card-shadow);
+}
+
+.release--latest {
+  border-color: color-mix(in srgb, var(--accent-strong) 70%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent-strong) 55%, transparent), var(--card-shadow);
+}
+
+.release__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.release__head h2 {
+  margin: 0;
+  font-size: clamp(22px, 2.4vw, 28px);
+  letter-spacing: -0.02em;
+}
+
+.release__date {
+  color: var(--ink-faint);
+  font-size: 14.5px;
+}
+
+.release__summary {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+  font-size: 16.5px;
+}
+
+.release h3 {
+  margin: 24px 0 12px;
+  font-size: 12.5px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+}
+
+.release .check-list li strong {
+  color: var(--ink);
+}
+
+.release__meta {
+  margin: 24px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 13.5px;
+  color: var(--ink-faint);
+}
+
+.release__meta a {
+  color: var(--accent-text);
+}
+
+.badge--latest {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--accent-text);
+  border: 1px solid color-mix(in srgb, var(--accent-strong) 45%, transparent);
+}
+
+@media (max-width: 620px) {
+  .release {
+    padding: 22px 20px 20px;
+  }
+}

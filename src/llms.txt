@@ -1,0 +1,34 @@
+# FoundaTrix Studio
+
+> FoundaTrix Studio is professional Windows software for the analysis and design of rigid foundations of any shape (spread, combined, strapped and mat foundations, with any number of pedestals), made by RamisoftSolutions for practising engineers on real projects. The program is free, with no limit on model size, no time limit, no watermark added and no account required.
+
+## What it does
+
+- Rigid foundations of any outline, rectangular, circular, octagonal or irregular, carrying any number of pedestals, modelled in a 3D Studio with drafting precision or typed into spreadsheet-style tables beside the model.
+- Bearing pressure under a rigid base for every allowable-stress combination, a partly lifted base included, solved for the neutral axis that puts the pressure resultant where the load acts; overturning and sliding.
+- ASCE 7-22 load combinations, strength design and allowable stress, seismic included, or your own supplied combinations.
+- ACI 318-19 design: one-way shear and flexure from a swept envelope, the four mats and their bars, two-way shear, pedestal axial force and moment on a biaxial strength surface, strap footings, and cast-in anchor rods to Chapter 17.
+- The calculation report: a typeset PDF printing every derivation symbolically and with your numbers substituted, beside its clause.
+- The soil response is not modelled: the allowable bearing pressure and other geotechnical inputs are taken as given.
+
+## Free, with no limits
+
+- The program sets no limit on the number of footings, pedestals, loads or load combinations, in any plan: a model is as large as the computer can hold.
+- No time limit (the free part is not a trial), no watermark added by the free version, no advertising and no telemetry. No account is needed, and it works offline.
+- It is not a student, educational or evaluation edition: it is the same professional program in every plan, and nothing in the terms of use restricts commercial use.
+- A free account adds cloud jobs shared with PileTrix Studio and StruTrix Studio, version history, a recycle bin, an AI assistant connector, and 30 days of every premium capability from the first sign-in.
+- Premium capabilities are a separate set: the foundation wizards for vertical vessels, horizontal vessels and heat exchangers, substation equipment and pipe supports; steel design of stands and racks to AISC 360-22; your firm's name and logo on the report; IFC 4.3 and Revit export; the job map and address lookup; foundations on piles (which also need a PileTrix Studio subscription or trial); and loads read from a StruTrix Studio structure (which also need a StruTrix Studio subscription or trial). Pro pricing has not been announced.
+
+## Pages
+
+- [Home](https://www.foundatrix.com/): what the program does, the premium capabilities, the plans and the download
+- [Features](https://www.foundatrix.com/features/): the engineering in detail, the standards, and what it does not do
+- [Pricing](https://www.foundatrix.com/pricing/): the free, signed-in and premium plans compared, and questions answered
+- [What's new](https://www.foundatrix.com/whats-new/): every release in the Microsoft Store, newest first
+- [Support](https://www.foundatrix.com/support/): bug reports, feature requests and private contact
+- [Microsoft Store listing](https://apps.microsoft.com/detail/9PN2N2M02389): where to get it
+- [Terms of use](https://www.foundatrix.com/terms/) and [privacy policy](https://www.foundatrix.com/privacy/)
+
+## The family
+
+FoundaTrix Studio is one of three programs from RamisoftSolutions, with one account for all of them: PileTrix Studio for piles (https://www.piletrix.com) and StruTrix Studio for three-dimensional frames (https://www.strutrix.com).

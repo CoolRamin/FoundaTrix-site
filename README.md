@@ -33,10 +33,16 @@ configuration, no build output of the program.
 | `/` | `src/index.html` | Home: what the program does, the premium capabilities, plans, download, support |
 | `/features/` | `src/features/index.html` | The engineering in detail: methods, standards, data and exchange |
 | `/pricing/` | `src/pricing/index.html` | Free, signed in, and premium, with a comparison table and questions |
+| `/whats-new/` | `src/whats-new/index.html` | Release notes: each Microsoft Store release, newest first, from the "What's new" text submitted with it |
 | `/support/` | `src/support/index.html` | Where to report a bug, ask for a feature or write privately |
 | `/privacy/` | `src/privacy/index.html` | Privacy policy |
 | `/terms/` | `src/terms/index.html` | Terms of use, including the engineering disclaimer |
 | (any 404) | `src/404.html` | Not-found page |
+| `/llms.txt` | `src/llms.txt` | A plain-text summary of the program for AI tools (the llms.txt convention); keep it to what the pages say |
+
+**What's new gets a new release card on top with every Store release**: the card's text is the "What's new" the
+submission carried (checked against the program's manual), the `release--latest` class and the Latest badge move to it,
+and its `release__meta` names the Store package's version (display version A.BCD is package A.B.CD.0).
 
 `styles.css` and `site.js` are shared by every page. The pages are hand-written HTML with no build
 step and no framework. The site uses no cookies, analytics, trackers or third-party scripts, fonts
@@ -91,6 +97,9 @@ saved as WebP at quality 84 to 86; then update the `<img>` `width`, `height` and
 |---|---|---|
 | Download link (Microsoft Store) | `src/index.html`, `#download` section, and every "Download" button (`/#download`) | Settled 2026-10-11: the button links the Store listing, `https://apps.microsoft.com/detail/9PN2N2M02389` (Store ID 9PN2N2M02389), with the site's own Store-bag button rather than Microsoft's badge image, which the strict CSP (`img-src 'self'`) would need hosting locally |
 | Privacy and terms URLs in the program and the Store listing | Since 2026-10-11 they point at this site's `/privacy/` and `/terms/`; the copies on ramisoftsolutions.com are no longer linked by the program | Settled |
+| Free, with no limits, for real projects | Home: the description and `og:description`, the announce bar, the hero's assurances (No size limit), the free section (its heading and text, and two tiles: No limit on model size, Made for real projects), the Free plan; `/pricing/`: the description, `og:title`, the headline, the Free plan, three questions (model size, real projects, a catch), the closing; Features: its description; `src/llms.txt`; the JSON-LD on Home (SoftwareApplication) and `/pricing/` (FAQPage) | Stated on 2026-11-07 at the owner's word, as www.strutrix.com does. Each claim was checked in the program's source that day: nothing caps the number of footings, pedestals, loads or combinations, at any tier; the free part has no time limit (it is not a trial); the free report carries no tier marking, so the site says the free version adds no watermark (the report is stamped NOT A DESIGN when its results are not a design, an engineering marking unrelated to the plan, so never write "never watermarked"); the terms of use restrict no commercial use. No model size the program was developed or timed on is claimed: that number is StruTrix Studio's. The FAQ's JSON-LD is worked from the page's own questions: change a question, change the block. Never write "free to start" |
+| The premium split | Home `#premium`, `#structure-link`, `#plans`; `/pricing/`; Features | The wizards, the steel design of stands and racks, the firm's name and logo on the report, IFC and Revit export and the job map; a foundation on piles (with PileTrix Studio's subscription or trial too) and loads from a StruTrix Studio structure (with StruTrix Studio's). The calculation report itself is free for everyone since program 1.148 (first in the Store with 1.161) |
+| Loads from StruTrix Studio | Home `#structure-link`; Features `#structure-link`; `/pricing/` (the Pro plan and the comparison); `/whats-new/` (1.168) | Open to every engineer with premium since program 1.164, first in the Store with 1.168 (2026-11-07); described from the manual's section 6.5. No picture yet: a screenshot of the import from a fictional job could join the Home section |
 
 The privacy policy and terms of use are the same text as the pages published on
 www.ramisoftsolutions.com (effective October 5, 2026). Change both together.

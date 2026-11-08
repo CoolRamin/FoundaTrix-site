@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Features — FoundaTrix Studio</title>
-<meta name="description" content="What FoundaTrix Studio computes and the standards it follows, for spread, combined, strapped and mat foundations of any shape: bearing with partial uplift, overturning and sliding, ACI 318-19 design, wizards, AISC 360-22 steel design, calculation reports and IFC and Revit export." />
+<meta name="description" content="What FoundaTrix Studio computes and the standards it follows, for spread, combined, strapped and mat foundations of any shape: bearing with partial uplift, overturning and sliding, ACI 318-19 design, wizards, AISC 360-22 steel design, loads from StruTrix Studio, calculation reports and IFC and Revit export. Free, with no limit on model size." />
 <meta name="color-scheme" content="light dark" />
 <meta name="theme-color" content="#0a0f1c" />
 <meta property="og:type" content="website" />
@@ -33,6 +33,7 @@
           <li><a href="/features/" aria-current="page">Features</a></li>
           <li><a href="/#premium">Premium</a></li>
           <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/whats-new/">What's new</a></li>
           <li><a href="/support/">Support</a></li>
         </ul>
       </nav>
@@ -76,6 +77,7 @@
         <li><a href="#wizards">Wizards</a></li>
         <li><a href="#steel">Steel</a></li>
         <li><a href="#piles">Piles</a></li>
+        <li><a href="#structure-link">StruTrix loads</a></li>
         <li><a href="#report">Report</a></li>
         <li><a href="#bim">IFC &amp; Revit</a></li>
         <li><a href="#cloud">Cloud</a></li>
@@ -253,7 +255,7 @@
             <li>Hide, isolate and unhide; named views; pictures of the view with labels and dimensions</li>
             <li>Model Explorer, Properties and Command Line in panes you can dock, float, pin or move</li>
             <li>The model checked as you build it, every problem with a code, a sentence and its object</li>
-            <li>Unlimited undo that survives a save, and Reset to the last save in one step</li>
+            <li>Undo and redo that reach back past a save, and Reset to the last save in one step</li>
           </ul>
         </div>
         <figure class="shot">
@@ -488,17 +490,67 @@
     </div>
   </section>
 
+  <!-- ===================== Loads from StruTrix Studio ===================== -->
+  <section id="structure-link" aria-labelledby="structure-link-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--premium">Loads from StruTrix Studio &middot; Premium &middot; New</p>
+        <h2 id="structure-link-title">A structure's support reactions, read as your footing loads.</h2>
+        <p>A <a href="https://www.strutrix.com/" target="_blank" rel="noopener">StruTrix Studio</a> structure saved in this model's cloud job gives the model its loads: its supports' reactions, as StruTrix Studio solved them and saved them with the structure, read as the loads on a footing placed at each support or on the pedestals already there. Choose File &gt; Import &gt; From StruTrix Studio and pick the structure; only one saved with a current run is read.</p>
+      </div>
+      <div class="spec-grid">
+        <div class="spec-card reveal">
+          <div class="spec-card__head"><p class="card__kicker">What is read</p><span class="badge badge--premium">Premium</span></div>
+          <h3>Its load cases or its combinations, never both</h3>
+          <ul class="check-list check-list--premium">
+            <li>Its basic load cases by category: D, L, Lr, S, R, W and E become this program's Dead, Live, Roof live, Snow, Rain, Wind and Seismic cases, a wind or earthquake case keeping its direction, combined by this program's own ASCE 7-22 combinations</li>
+            <li>A case of any other category, such as ice or wire tension, is left out and said; reading the combinations takes it in</li>
+            <li>Or its strength and allowable stress combinations, already combined, second-order effects included where StruTrix Studio analysed them so, with the dead and live factors read from each combination's terms</li>
+            <li>A service combination, one its run did not solve, and one with the seismic load effect including overstrength are not offered, and the combinations table says why</li>
+            <li>A structure with a tension-only or compression-only member, or a support spring that acts one way, is read through its combinations</li>
+          </ul>
+        </div>
+        <div class="spec-card reveal">
+          <div class="spec-card__head"><p class="card__kicker">Where the loads go</p><span class="badge badge--premium">Premium</span></div>
+          <h3>A footing at each support, or the pedestals already there</h3>
+          <ul class="check-list check-list--premium">
+            <li>A footing and a pedestal of the size you state, centred on each support; nothing is sized, so size each one as you would one you placed</li>
+            <li>Or each support's loads on the pedestal an earlier reading placed, or on the one pedestal within the tolerance you state; a support near two pedestals, or near none, is named and not read</li>
+            <li>A foundation a wizard governs is never loaded: its loads are the wizard's</li>
+            <li>The structure's origin and the angle of its axes on the site, its positions and loads turned together</li>
+            <li>Each reaction reversed into the load on the foundation at the top of the pedestal; the Source column says which rows came from the structure</li>
+          </ul>
+        </div>
+        <div class="spec-card spec-card--wide reveal">
+          <div class="spec-card__head"><p class="card__kicker">The loads follow the structure</p><span class="badge badge--premium">Premium</span></div>
+          <h3>The latest saved version, before every run</h3>
+          <ul class="check-list check-list--premium">
+            <li>Run, Run All and a results pane's own Run each ask for the structure again; a newer saved version is read onto the same pedestals in place of the one before, you are told, and one Undo takes it back</li>
+            <li>A save that changed nothing its run covers takes nothing and says nothing; a run never asks you to sign in</li>
+            <li>What you chose is read again: a combination the structure has gained is named and read only once you tick it in Update..., and one it no longer offers keeps its rows and is named</li>
+            <li>A structure that cannot be read, or whose latest version was saved with a change its run did not cover, leaves the footings it loads unanalysed, by name, until it can be read again</li>
+            <li>Supports and combinations are matched by name; one renamed or removed keeps the loads read before, and is named at the run</li>
+          </ul>
+        </div>
+      </div>
+      <p class="types-note reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        <span><strong>Needs your own StruTrix Studio subscription or trial as well as this program's premium.</strong> A StruTrix Studio trial starts the first time you sign in to StruTrix Studio, so to read a structure a colleague saved in the job, sign in to StruTrix Studio once yourself. Not yet done: the calculation report does not print which version of the structure was read, and several supports are not grouped under one combined footing.</span>
+      </p>
+    </div>
+  </section>
+
   <!-- ===================== Report ===================== -->
   <section id="report" class="alt-band" aria-labelledby="report-title">
     <div class="container">
       <div class="feature-row feature-row--flip reveal">
         <div class="feature-row__text">
-          <p class="eyebrow eyebrow--premium">Calculation report &middot; Premium</p>
+          <p class="eyebrow">Calculation report &middot; Free</p>
           <h3 id="report-title">A calculation package a reviewer can follow.</h3>
-          <p>A typeset PDF in which every derivation is printed twice: once symbolically, and once with your numbers and units substituted, each beside the clause it comes from.</p>
-          <ul class="check-list check-list--premium">
-            <li>Your firm's name and logo on the cover and the page headers; your paper size</li>
-            <li>Dimensioned figures of the footing, the pedestals, the reinforcement and the anchorage</li>
+          <p>A typeset PDF in which every derivation is printed twice: once symbolically, and once with your numbers and units substituted, each beside the clause it comes from. It is free for everyone, with no account needed, and the same document in every plan; a foundation on piles is reported with both programs' subscriptions, since it prints PileTrix Studio's analyses of its piles.</p>
+          <ul class="check-list">
+            <li>Your firm's name, logo and the line under it on the cover and the page headers <span class="badge badge--premium">Premium</span></li>
+            <li>Dimensioned figures of the footing, the pedestals, the reinforcement and the anchorage, on your paper size</li>
             <li>The basis of design, the register of assumptions and the references, always included</li>
             <li>Written only from a current analysis, and marked NOT A DESIGN where that applies</li>
           </ul>
@@ -675,6 +727,7 @@
           <li><a href="/features/">Features</a></li>
           <li><a href="/#premium">Premium</a></li>
           <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/whats-new/">What's new</a></li>
           <li><a href="/#download">Download</a></li>
         </ul>
       </div>
