@@ -16,14 +16,15 @@
 - The program sets no limit on the number of footings, pedestals, loads or load combinations, in any plan: a model is as large as the computer can hold.
 - No time limit (the free part is not a trial), no watermark added by the free version, no advertising and no telemetry. No account is needed, and it works offline.
 - It is not a student, educational or evaluation edition: it is the same professional program in every plan, and nothing in the terms of use restricts commercial use.
-- A free account adds cloud jobs shared with PileTrix Studio and StruTrix Studio, version history, a recycle bin, an AI assistant connector, and 30 days of every premium capability from the first sign-in.
-- Premium capabilities are a separate set: the foundation wizards for vertical vessels, horizontal vessels and heat exchangers, substation equipment and pipe supports; steel design of stands and racks to AISC 360-22; your firm's name and logo on the report; IFC 4.3 and Revit export; the job map and address lookup; foundations on piles (which also need a PileTrix Studio subscription or trial); and loads read from a StruTrix Studio structure (which also need a StruTrix Studio subscription or trial). Pro pricing has not been announced.
+- A free account adds cloud jobs shared with PileTrix Studio and StruTrix Studio, version history, a recycle bin, an AI assistant connector, and 30 days of every Pro feature from the first sign-in.
+- Pro features are a separate set: the foundation wizards for vertical vessels, horizontal vessels and heat exchangers, substation equipment and pipe supports; steel design of stands and racks to AISC 360-22; your firm's name and logo on the report; IFC 4.3 and Revit export; the job map and address lookup; foundations on piles (which also need a PileTrix Studio subscription or trial); and loads read from a StruTrix Studio structure (which also need a StruTrix Studio subscription or trial). Pro pricing has not been announced.
+- Pro costs $69 a month or $690 a year for FoundaTrix Studio, or $169 a month or $1,690 a year for all three programs, in US dollars before tax. From the program's next update it is sold by our merchant of record, which takes the payment; every Pro feature is free to try first.
 
 ## Pages
 
-- [Home](https://www.foundatrix.com/): what the program does, the premium capabilities, the plans and the download
+- [Home](https://www.foundatrix.com/): what the program does, the Pro features, the plans and the download
 - [Features](https://www.foundatrix.com/features/): the engineering in detail, the standards, and what it does not do
-- [Pricing](https://www.foundatrix.com/pricing/): the free, signed-in and premium plans compared, and questions answered
+- [Pricing](https://www.foundatrix.com/pricing/): the free, signed-in and Pro plans compared, and questions answered
 - [What's new](https://www.foundatrix.com/whats-new/): every release in the Microsoft Store, newest first
 - [Support](https://www.foundatrix.com/support/): bug reports, feature requests and private contact
 - [Microsoft Store listing](https://apps.microsoft.com/detail/9PN2N2M02389): where to get it

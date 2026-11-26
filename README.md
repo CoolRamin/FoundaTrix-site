@@ -25,18 +25,18 @@ The analysis, the design and the calculation report are free, with no limit on m
   combinations analysed as they are.
 - **ACI 318-19 design**: one-way shear and flexure from a swept envelope, the four mats and their bars, two-way shear,
   pedestal axial force and moment on a biaxial strength surface, strap footings, and cast-in anchor rods to Chapter 17.
-- **Wizards** (premium) that build a complete, loaded foundation from a questionnaire: vertical vessels, horizontal vessels
+- **Wizards** (Pro) that build a complete, loaded foundation from a questionnaire: vertical vessels, horizontal vessels
   and heat exchangers, substation equipment and pipe supports, each decision recorded with the clause behind it.
-- **Steel stands and racks** (premium) analysed as 3D frames by the direct analysis method and designed to AISC 360-22,
+- **Steel stands and racks** (Pro) analysed as 3D frames by the direct analysis method and designed to AISC 360-22,
   base plates to AISC Design Guide 1, with a member detail that works every check equation by equation.
-- **Foundations on piles** (premium, with a PileTrix Studio subscription or trial): pile models copied from the job's
+- **Foundations on piles** (Pro, with a PileTrix Studio subscription or trial): pile models copied from the job's
   PileTrix Studio analyses and the rigid cap analysed on its piles under every combination.
-- **Loads from StruTrix Studio** (premium, with a StruTrix Studio subscription or trial): a StruTrix Studio structure saved
+- **Loads from StruTrix Studio** (Pro, with a StruTrix Studio subscription or trial): a StruTrix Studio structure saved
   in the same cloud job gives the model its loads, its supports' reactions read by load case or as its combinations,
   placing a footing at each support or loading the pedestals there, its latest saved version taken before every run.
 - **The calculation report**: a typeset PDF printing every derivation symbolically and with your numbers substituted,
-  beside its clause; free, the firm's name and logo on it premium.
-- **Exchange** (premium): export to IFC 4.3, and to Revit as native elements through the included Revit add-in.
+  beside its clause; free, the firm's name and logo on it Pro.
+- **Exchange** (Pro): export to IFC 4.3, and to Revit as native elements through the included Revit add-in.
 - **Cloud and AI** (free account): cloud jobs shared with PileTrix Studio and StruTrix Studio, version history, a recycle
   bin, and a connector through which your own AI assistant creates foundations and runs what-if analyses that only you
   apply.
@@ -53,13 +53,13 @@ Every release's notes are in [CHANGELOG.md](CHANGELOG.md) and on the website's
 ## Common questions
 
 - **Can FoundaTrix Studio read loads from a structural analysis?** Yes: since version 1.168 it reads a StruTrix Studio
-  structure's support reactions from the same cloud job (premium, with a StruTrix Studio subscription or trial of your own).
+  structure's support reactions from the same cloud job (Pro, with a StruTrix Studio subscription or trial of your own).
 - **Does it model the soil?** No. The bearing pressure is solved under a rigid base; the allowable bearing pressure and the
   other geotechnical inputs are taken as given. For a foundation on piles, the piles' own soil response comes from their
   PileTrix Studio analyses.
 - **Is it free?** The modelling, the bearing pressure, stability and ACI 318-19 design, and the calculation report are free,
   with no limit on model size or time, no watermark added and no account. It is professional software for real projects,
-  not a student or evaluation edition. Premium capabilities are a separate set, free to try.
+  not a student or evaluation edition. Pro features are a separate set, free to try.
 - **Is a pile cap's concrete designed?** Not yet: a foundation on piles is analysed and its piles judged, and the cap's
   concrete design on the piles' reactions is the next version's.
 
@@ -98,9 +98,9 @@ configuration, no build output of the program.
 
 | Path | File | What it is |
 |---|---|---|
-| `/` | `src/index.html` | Home: what the program does, the premium capabilities, plans, download, support |
+| `/` | `src/index.html` | Home: what the program does, the Pro features, plans, download, support |
 | `/features/` | `src/features/index.html` | The engineering in detail: methods, standards, data and exchange |
-| `/pricing/` | `src/pricing/index.html` | Free, signed in, and premium, with a comparison table and questions |
+| `/pricing/` | `src/pricing/index.html` | Free, signed in, and Pro, with a comparison table and questions |
 | `/whats-new/` | `src/whats-new/index.html` | Release notes: each Microsoft Store release, newest first, from the "What's new" text submitted with it |
 | `/support/` | `src/support/index.html` | Where to report a bug, ask for a feature or write privately |
 | `/privacy/` | `src/privacy/index.html` | Privacy policy |
@@ -166,8 +166,8 @@ saved as WebP at quality 84 to 86; then update the `<img>` `width`, `height` and
 | Download link (Microsoft Store) | `src/index.html`, `#download` section, and every "Download" button (`/#download`) | Settled 2026-10-11: the button links the Store listing, `https://apps.microsoft.com/detail/9PN2N2M02389` (Store ID 9PN2N2M02389), with the site's own Store-bag button rather than Microsoft's badge image, which the strict CSP (`img-src 'self'`) would need hosting locally |
 | Privacy and terms URLs in the program and the Store listing | Since 2026-10-11 they point at this site's `/privacy/` and `/terms/`; the copies on ramisoftsolutions.com are no longer linked by the program | Settled |
 | Free, with no limits, for real projects | Home: the description and `og:description`, the announce bar, the hero's assurances (No size limit), the free section (its heading and text, and two tiles: No limit on model size, Made for real projects), the Free plan; `/pricing/`: the description, `og:title`, the headline, the Free plan, three questions (model size, real projects, a catch), the closing; Features: its description; `src/llms.txt`; the JSON-LD on Home (SoftwareApplication) and `/pricing/` (FAQPage) | Stated on 2026-11-07 at the owner's word, as www.strutrix.com does. Each claim was checked in the program's source that day: nothing caps the number of footings, pedestals, loads or combinations, at any tier; the free part has no time limit (it is not a trial); the free report carries no tier marking, so the site says the free version adds no watermark (the report is stamped NOT A DESIGN when its results are not a design, an engineering marking unrelated to the plan, so never write "never watermarked"); the terms of use restrict no commercial use. No model size the program was developed or timed on is claimed: that number is StruTrix Studio's. The FAQ's JSON-LD is worked from the page's own questions: change a question, change the block. Never write "free to start" |
-| The premium split | Home `#premium`, `#structure-link`, `#plans`; `/pricing/`; Features | The wizards, the steel design of stands and racks, the firm's name and logo on the report, IFC and Revit export and the job map; a foundation on piles (with PileTrix Studio's subscription or trial too) and loads from a StruTrix Studio structure (with StruTrix Studio's). The calculation report itself is free for everyone since program 1.148 (first in the Store with 1.161) |
-| Loads from StruTrix Studio | Home `#structure-link`; Features `#structure-link`; `/pricing/` (the Pro plan and the comparison); `/whats-new/` (1.168) | Open to every engineer with premium since program 1.164, first in the Store with 1.168 (2026-11-07); described from the manual's section 6.5. No picture yet: a screenshot of the import from a fictional job could join the Home section |
+| The Pro split | Home `#pro`, `#structure-link`, `#plans`; `/pricing/`; Features | The wizards, the steel design of stands and racks, the firm's name and logo on the report, IFC and Revit export and the job map; a foundation on piles (with PileTrix Studio's subscription or trial too) and loads from a StruTrix Studio structure (with StruTrix Studio's). The calculation report itself is free for everyone since program 1.148 (first in the Store with 1.161) |
+| Loads from StruTrix Studio | Home `#structure-link`; Features `#structure-link`; `/pricing/` (the Pro plan and the comparison); `/whats-new/` (1.168) | Open to every engineer with Pro since program 1.164, first in the Store with 1.168 (2026-11-07); described from the manual's section 6.5. No picture yet: a screenshot of the import from a fictional job could join the Home section |
 
 The privacy policy and terms of use are the same text as the pages published on
 www.ramisoftsolutions.com (effective October 5, 2026). Change both together.
