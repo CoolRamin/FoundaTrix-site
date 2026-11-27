@@ -18,7 +18,7 @@
 - It is not a student, educational or evaluation edition: it is the same professional program in every plan, and nothing in the terms of use restricts commercial use.
 - A free account adds cloud jobs shared with PileTrix Studio and StruTrix Studio, version history, a recycle bin, an AI assistant connector, and 30 days of every Pro feature from the first sign-in.
 - Pro features are a separate set: the foundation wizards for vertical vessels, horizontal vessels and heat exchangers, substation equipment and pipe supports; steel design of stands and racks to AISC 360-22; your firm's name and logo on the report; IFC 4.3 and Revit export; the job map and address lookup; foundations on piles (which also need a PileTrix Studio subscription or trial); and loads read from a StruTrix Studio structure (which also need a StruTrix Studio subscription or trial). Pro pricing has not been announced.
-- Pro costs $69 a month or $690 a year for FoundaTrix Studio, or $169 a month or $1,690 a year for all three programs, in US dollars before tax. From the program's next update it is sold by our merchant of record, which takes the payment; every Pro feature is free to try first.
+- Pro costs $69 a month or $690 a year for FoundaTrix Studio, or $169 a month or $1,690 a year for TripleTrix, all three programs together, in US dollars before tax. From the program's next update it is sold by our merchant of record, which takes the payment; every Pro feature is free to try first.
 
 ## Pages
 
@@ -32,4 +32,4 @@
 
 ## The family
 
-FoundaTrix Studio is one of three programs from RamisoftSolutions, with one account for all of them: PileTrix Studio for piles (https://www.piletrix.com) and StruTrix Studio for three-dimensional frames (https://www.strutrix.com).
+FoundaTrix Studio is one of the three TripleTrix programs from RamisoftSolutions, with one account for all of them: PileTrix Studio for piles (https://www.piletrix.com) and StruTrix Studio for three-dimensional frames (https://www.strutrix.com).
